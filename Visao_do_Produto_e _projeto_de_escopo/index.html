@@ -1,0 +1,3531 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../atas-reuniao/ata-reuniao-7/">
+      
+      
+        <link rel="next" href="../Arquitetura/">
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.15">
+    
+    
+      
+        <title>Documento de Visão - Documentação</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.342714a4.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    <body dir="ltr">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#omega-visao-do-produto-e-projeto" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="Documentação" class="md-header__button md-logo" aria-label="Documentação" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            Documentação
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Documento de Visão
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="Documentação" class="md-nav__button md-logo" aria-label="Documentação" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    Documentação
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Sobre o Projeto
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Atas de Reunião
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            Atas de Reunião
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../atas-reuniao/ata-reuniao-1/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Ata 1
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../atas-reuniao/ata-reuniao-2/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Ata 2
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../atas-reuniao/ata-reuniao-3/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Ata 3
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../atas-reuniao/ata-reuniao-4/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Ata 4
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../atas-reuniao/ata-reuniao-5/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Ata 5
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../atas-reuniao/ata-reuniao-6/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Ata 6
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../atas-reuniao/ata-reuniao-7/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Ata 7
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    Documentação
+    
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            Documentação
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Documento de Visão
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    Documento de Visão
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#versao-11" class="md-nav__link">
+    <span class="md-ellipsis">
+      Versão 1.1
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#equipe" class="md-nav__link">
+    <span class="md-ellipsis">
+      Equipe
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#historico-de-revisoes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Histórico de Revisões
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#pontos-de-contribuicao" class="md-nav__link">
+    <span class="md-ellipsis">
+      Pontos de Contribuição
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sumario" class="md-nav__link">
+    <span class="md-ellipsis">
+      Sumário
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#visao-geral-do-produto-e-projeto" class="md-nav__link">
+    <span class="md-ellipsis">
+      VISÃO GERAL DO PRODUTO E PROJETO
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="VISÃO GERAL DO PRODUTO E PROJETO">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1visao-geral-do-produto" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.Visão Geral do Produto
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1.Visão Geral do Produto">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#11-problema" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.1 Problema
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#12-declaracao-de-posicao-do-produto" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.2 Declaração de Posição do Produto
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#13-objetivos-do-produto" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.3 Objetivos do Produto
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#14-tecnologias-a-serem-utilizadas" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.4 Tecnologias a Serem Utilizadas
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2visao-geral-do-projeto" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.Visão Geral do Projeto
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2.Visão Geral do Projeto">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#21-ciclo-de-vida-do-projeto-de-desenvolvimento-de-software" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.1 Ciclo de vida do projeto de desenvolvimento de software
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#22-organizacao-do-projeto" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.2 Organização do Projeto
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#23-planejamento-das-fases-eou-iteracoes-do-projeto" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.3 Planejamento das Fases e/ou Iterações do Projeto
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#24-matriz-de-comunicacao" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.4 Matriz de Comunicação
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#25-gerenciamento-de-riscos" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.5 Gerenciamento de Riscos
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#251-criterios-para-atrasos-na-entrega-risco-alto" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.5.1 Critérios para atrasos na entrega (Risco alto)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#26-criterios-de-replanejamento" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.6 Critérios de Replanejamento
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#261-criterios-relacionados-ao-cronograma-de-entregas" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.6.1 Critérios relacionados ao cronograma de entregas
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#262-criterios-relacionados-aos-requisitos-e-usabilidade" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.6.2 Critérios relacionados aos requisitos e usabilidade
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#263-criterios-relacionados-a-qualidade-e-testes" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.6.3 Critérios relacionados à qualidade e testes
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#264-criterios-relacionados-a-recursos-e-infraestrutura" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.6.4 Critérios relacionados a recursos e infraestrutura
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#265-processo-de-monitoramento-e-atualizacao" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.6.5 Processo de monitoramento e atualização:
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3processo-de-desenvolvimento-de-software" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.PROCESSO DE DESENVOLVIMENTO DE SOFTWARE
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3.PROCESSO DE DESENVOLVIMENTO DE SOFTWARE">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#metodologia-adotada" class="md-nav__link">
+    <span class="md-ellipsis">
+      Metodologia Adotada
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#visao-geral-do-processo" class="md-nav__link">
+    <span class="md-ellipsis">
+      Visão Geral do Processo
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#procedimentos-tecnicos" class="md-nav__link">
+    <span class="md-ellipsis">
+      Procedimentos Técnicos
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#metodos-utilizados" class="md-nav__link">
+    <span class="md-ellipsis">
+      Métodos Utilizados
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ferramentas" class="md-nav__link">
+    <span class="md-ellipsis">
+      Ferramentas
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4declaracao-de-escopo-do-projeto" class="md-nav__link">
+    <span class="md-ellipsis">
+      4.DECLARAÇÃO DE ESCOPO DO PROJETO
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="4.DECLARAÇÃO DE ESCOPO DO PROJETO">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#41-backlog-do-produto" class="md-nav__link">
+    <span class="md-ellipsis">
+      4.1 Backlog do produto
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#42-perfis" class="md-nav__link">
+    <span class="md-ellipsis">
+      4.2 Perfis
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#43-cenarios" class="md-nav__link">
+    <span class="md-ellipsis">
+      4.3 Cenários
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#44-backlog" class="md-nav__link">
+    <span class="md-ellipsis">
+      4.4 Backlog
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5metricas-e-medicoes" class="md-nav__link">
+    <span class="md-ellipsis">
+      5.MÉTRICAS E MEDIÇÕES
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="5.MÉTRICAS E MEDIÇÕES">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#51-gqm-de-medicoes" class="md-nav__link">
+    <span class="md-ellipsis">
+      5.1 GQM de medições
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6testes-de-software" class="md-nav__link">
+    <span class="md-ellipsis">
+      6.TESTES DE SOFTWARE
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="6.TESTES DE SOFTWARE">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#61-estrategia-de-testes-contendo" class="md-nav__link">
+    <span class="md-ellipsis">
+      6.1 Estratégia de testes contendo:
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="6.1 Estratégia de testes contendo:">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#611-niveis-de-testes-abordados" class="md-nav__link">
+    <span class="md-ellipsis">
+      6.1.1 Níveis de Testes Abordados
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#612-tipos-de-testes-abordados" class="md-nav__link">
+    <span class="md-ellipsis">
+      6.1.2 Tipos de Testes Abordados
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#613-ambientes-de-testes" class="md-nav__link">
+    <span class="md-ellipsis">
+      6.1.3 Ambientes de Testes
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#614-metricas-de-analise-do-sonarqube" class="md-nav__link">
+    <span class="md-ellipsis">
+      6.1.4 Métricas de Análise do SonarQube
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#615-plano-de-testes-unitarios" class="md-nav__link">
+    <span class="md-ellipsis">
+      6.1.5 Plano de Testes Unitários
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#62-roteiro-de-teste" class="md-nav__link">
+    <span class="md-ellipsis">
+      6.2 Roteiro de Teste
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#fonte-os-autores" class="md-nav__link">
+    <span class="md-ellipsis">
+      Fonte: Os autores
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7referencias-bibliograficas" class="md-nav__link">
+    <span class="md-ellipsis">
+      7.REFERÊNCIAS BIBLIOGRÁFICAS
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../Arquitetura/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Documento de Arquitetura
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#versao-11" class="md-nav__link">
+    <span class="md-ellipsis">
+      Versão 1.1
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#equipe" class="md-nav__link">
+    <span class="md-ellipsis">
+      Equipe
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#historico-de-revisoes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Histórico de Revisões
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#pontos-de-contribuicao" class="md-nav__link">
+    <span class="md-ellipsis">
+      Pontos de Contribuição
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#sumario" class="md-nav__link">
+    <span class="md-ellipsis">
+      Sumário
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#visao-geral-do-produto-e-projeto" class="md-nav__link">
+    <span class="md-ellipsis">
+      VISÃO GERAL DO PRODUTO E PROJETO
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="VISÃO GERAL DO PRODUTO E PROJETO">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1visao-geral-do-produto" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.Visão Geral do Produto
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1.Visão Geral do Produto">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#11-problema" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.1 Problema
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#12-declaracao-de-posicao-do-produto" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.2 Declaração de Posição do Produto
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#13-objetivos-do-produto" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.3 Objetivos do Produto
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#14-tecnologias-a-serem-utilizadas" class="md-nav__link">
+    <span class="md-ellipsis">
+      1.4 Tecnologias a Serem Utilizadas
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2visao-geral-do-projeto" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.Visão Geral do Projeto
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2.Visão Geral do Projeto">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#21-ciclo-de-vida-do-projeto-de-desenvolvimento-de-software" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.1 Ciclo de vida do projeto de desenvolvimento de software
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#22-organizacao-do-projeto" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.2 Organização do Projeto
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#23-planejamento-das-fases-eou-iteracoes-do-projeto" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.3 Planejamento das Fases e/ou Iterações do Projeto
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#24-matriz-de-comunicacao" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.4 Matriz de Comunicação
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#25-gerenciamento-de-riscos" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.5 Gerenciamento de Riscos
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#251-criterios-para-atrasos-na-entrega-risco-alto" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.5.1 Critérios para atrasos na entrega (Risco alto)
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#26-criterios-de-replanejamento" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.6 Critérios de Replanejamento
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#261-criterios-relacionados-ao-cronograma-de-entregas" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.6.1 Critérios relacionados ao cronograma de entregas
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#262-criterios-relacionados-aos-requisitos-e-usabilidade" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.6.2 Critérios relacionados aos requisitos e usabilidade
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#263-criterios-relacionados-a-qualidade-e-testes" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.6.3 Critérios relacionados à qualidade e testes
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#264-criterios-relacionados-a-recursos-e-infraestrutura" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.6.4 Critérios relacionados a recursos e infraestrutura
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#265-processo-de-monitoramento-e-atualizacao" class="md-nav__link">
+    <span class="md-ellipsis">
+      2.6.5 Processo de monitoramento e atualização:
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3processo-de-desenvolvimento-de-software" class="md-nav__link">
+    <span class="md-ellipsis">
+      3.PROCESSO DE DESENVOLVIMENTO DE SOFTWARE
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3.PROCESSO DE DESENVOLVIMENTO DE SOFTWARE">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#metodologia-adotada" class="md-nav__link">
+    <span class="md-ellipsis">
+      Metodologia Adotada
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#visao-geral-do-processo" class="md-nav__link">
+    <span class="md-ellipsis">
+      Visão Geral do Processo
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#procedimentos-tecnicos" class="md-nav__link">
+    <span class="md-ellipsis">
+      Procedimentos Técnicos
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#metodos-utilizados" class="md-nav__link">
+    <span class="md-ellipsis">
+      Métodos Utilizados
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#ferramentas" class="md-nav__link">
+    <span class="md-ellipsis">
+      Ferramentas
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4declaracao-de-escopo-do-projeto" class="md-nav__link">
+    <span class="md-ellipsis">
+      4.DECLARAÇÃO DE ESCOPO DO PROJETO
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="4.DECLARAÇÃO DE ESCOPO DO PROJETO">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#41-backlog-do-produto" class="md-nav__link">
+    <span class="md-ellipsis">
+      4.1 Backlog do produto
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#42-perfis" class="md-nav__link">
+    <span class="md-ellipsis">
+      4.2 Perfis
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#43-cenarios" class="md-nav__link">
+    <span class="md-ellipsis">
+      4.3 Cenários
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#44-backlog" class="md-nav__link">
+    <span class="md-ellipsis">
+      4.4 Backlog
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5metricas-e-medicoes" class="md-nav__link">
+    <span class="md-ellipsis">
+      5.MÉTRICAS E MEDIÇÕES
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="5.MÉTRICAS E MEDIÇÕES">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#51-gqm-de-medicoes" class="md-nav__link">
+    <span class="md-ellipsis">
+      5.1 GQM de medições
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#6testes-de-software" class="md-nav__link">
+    <span class="md-ellipsis">
+      6.TESTES DE SOFTWARE
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="6.TESTES DE SOFTWARE">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#61-estrategia-de-testes-contendo" class="md-nav__link">
+    <span class="md-ellipsis">
+      6.1 Estratégia de testes contendo:
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="6.1 Estratégia de testes contendo:">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#611-niveis-de-testes-abordados" class="md-nav__link">
+    <span class="md-ellipsis">
+      6.1.1 Níveis de Testes Abordados
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#612-tipos-de-testes-abordados" class="md-nav__link">
+    <span class="md-ellipsis">
+      6.1.2 Tipos de Testes Abordados
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#613-ambientes-de-testes" class="md-nav__link">
+    <span class="md-ellipsis">
+      6.1.3 Ambientes de Testes
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#614-metricas-de-analise-do-sonarqube" class="md-nav__link">
+    <span class="md-ellipsis">
+      6.1.4 Métricas de Análise do SonarQube
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#615-plano-de-testes-unitarios" class="md-nav__link">
+    <span class="md-ellipsis">
+      6.1.5 Plano de Testes Unitários
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#62-roteiro-de-teste" class="md-nav__link">
+    <span class="md-ellipsis">
+      6.2 Roteiro de Teste
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#fonte-os-autores" class="md-nav__link">
+    <span class="md-ellipsis">
+      Fonte: Os autores
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#7referencias-bibliograficas" class="md-nav__link">
+    <span class="md-ellipsis">
+      7.REFERÊNCIAS BIBLIOGRÁFICAS
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="omega-visao-do-produto-e-projeto">Omega (Ω) - Visão do Produto e Projeto<a class="headerlink" href="#omega-visao-do-produto-e-projeto" title="Permanent link">&para;</a></h1>
+<h2 id="versao-11">Versão 1.1<a class="headerlink" href="#versao-11" title="Permanent link">&para;</a></h2>
+<hr />
+<h2 id="equipe">Equipe<a class="headerlink" href="#equipe" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Matrícula</th>
+<th>Nome</th>
+<th>Função</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>231011892</td>
+<td>Arthur Sismene Carvalho</td>
+<td>Desenvolvedor Frontend</td>
+</tr>
+<tr>
+<td>221022480</td>
+<td>Carlos Henrique de Paiva Munis</td>
+<td>Desenvolvedor Frontend</td>
+</tr>
+<tr>
+<td>231030691</td>
+<td>Guilherme Ferreira Brandao</td>
+<td>Desenvolvedor Backend</td>
+</tr>
+<tr>
+<td>232002996</td>
+<td>Heyttor Augusto de Assis Silva</td>
+<td>Desenvolvedor Backend</td>
+</tr>
+<tr>
+<td>202045348</td>
+<td>Ingrid Alves Rocha</td>
+<td>Dono do Produto</td>
+</tr>
+<tr>
+<td>232003661</td>
+<td>João Pedro Araujo de Freitas Lyra</td>
+<td>Líder e Dono do Produto</td>
+</tr>
+<tr>
+<td>222022135</td>
+<td>Letícia de Carvalho dos Santos</td>
+<td>Analista de Qualidade</td>
+</tr>
+<tr>
+<td>211045178</td>
+<td>Luis Guilherme Borges Monteiro</td>
+<td>Analista de Qualidade</td>
+</tr>
+<tr>
+<td>221007608</td>
+<td>Nayra Silva Nery</td>
+<td>Analista de Testes</td>
+</tr>
+<tr>
+<td>211031440</td>
+<td>Pedro Gomes Oliveira</td>
+<td>Analista de Testes</td>
+</tr>
+<tr>
+<td>232024026</td>
+<td>Rivadalvio Joaquim da Silva Filho</td>
+<td>Cliente</td>
+</tr>
+<tr>
+<td>232014271</td>
+<td>Yasmin Sousa Abdon</td>
+<td>Cliente</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="historico-de-revisoes">Histórico de Revisões<a class="headerlink" href="#historico-de-revisoes" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Data</th>
+<th>Versão</th>
+<th>Descrição</th>
+<th>Autor(es)</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>14/04/2025</td>
+<td>0.1</td>
+<td>Informações iniciais a respeito do projeto e da equipe</td>
+<td>Luis Guilherme Borges</td>
+</tr>
+<tr>
+<td>14/04/2025</td>
+<td>0.2</td>
+<td>Complementando os parâmetros iniciais (1.1)</td>
+<td>João Pedro Araújo de Freitas Lyra</td>
+</tr>
+<tr>
+<td>15/04/2025</td>
+<td>0.3</td>
+<td>Declaração de posição do Produto (1.2)</td>
+<td>Heyttor Augusto de Assis Silva, João Pedro Araújo de Freitas Lyra</td>
+</tr>
+<tr>
+<td>15/04/2025</td>
+<td>0.3</td>
+<td>Edição da Visão Geral do Produto (1.1), Bibliografia e diagrama da visão geral do produto</td>
+<td>Yasmin Sousa Abdon, Pedro Gomes Oliveira</td>
+</tr>
+<tr>
+<td>15/04/2025</td>
+<td>0.3</td>
+<td>Montagem do diagrama de ciclo de vida (2.1)</td>
+<td>Guilherme Ferreira Brandão, João Pedro Araújo de Freitas Lyra, Rivadalvio Joaquim da Silva Filho</td>
+</tr>
+<tr>
+<td>15/04/2025</td>
+<td>0.3</td>
+<td>Objetivo do Produto (1.3)</td>
+<td>João Pedro Araújo de Freitas Lyra, Yasmin Sousa Abdon</td>
+</tr>
+<tr>
+<td>15/04/2025</td>
+<td>0.3</td>
+<td>Nomeação do projeto</td>
+<td>Votação com todos os integrantes</td>
+</tr>
+<tr>
+<td>15/04/2025</td>
+<td>0.3</td>
+<td>Tecnologias a serem utilizadas (1.4)</td>
+<td>Vitória Aquere Matos, Leticia Carvalho dos Santos, João Pedro Araújo de Freitas Lyra, Guilherme Ferreira Brandão, Ingrid Alves Rocha</td>
+</tr>
+<tr>
+<td>14/05/2025</td>
+<td>1.0</td>
+<td>Organização do Projeto (2.2)</td>
+<td>Leticia Carvalho dos Santos</td>
+</tr>
+<tr>
+<td>14/05/2025</td>
+<td>1.0</td>
+<td>Planejamento das fases (2.3)</td>
+<td>João Pedro Araújo de Freitas Lyra</td>
+</tr>
+<tr>
+<td>14/05/2025</td>
+<td>1.0</td>
+<td>Matriz de comunicação (2.4)</td>
+<td>Heyttor Augusto de Assis Silva</td>
+</tr>
+<tr>
+<td>14/05/2025</td>
+<td>1.0</td>
+<td>Gerenciamento de riscos (2.5)</td>
+<td>Pedro Gomes Oliveira, Nayra Silva Nery</td>
+</tr>
+<tr>
+<td>14/05/2025</td>
+<td>1.0</td>
+<td>Critérios de planejamento (2.6)</td>
+<td>Nayra Silva Nery, Heyttor Augusto de Assis Silva</td>
+</tr>
+<tr>
+<td>14/05/2025</td>
+<td>1.0</td>
+<td>Processo de desenvolvimento de software (3)</td>
+<td>Carlos Henrique de Paiva Munis</td>
+</tr>
+<tr>
+<td>14/05/2025</td>
+<td>1.0</td>
+<td>Backlog do Produto (4.1)</td>
+<td>Guilherme Ferreira Brandão, João Pedro Araújo de Freitas Lyra</td>
+</tr>
+<tr>
+<td>14/05/2025</td>
+<td>1.0</td>
+<td>Perfis (4.2)</td>
+<td>Guilherme Ferreira Brandão, Carlos Henrique de Paiva Munis</td>
+</tr>
+<tr>
+<td>14/05/2025</td>
+<td>1.0</td>
+<td>Cenários (4.3)</td>
+<td>Guilherme Ferreira Brandão</td>
+</tr>
+<tr>
+<td>14/05/2025</td>
+<td>1.0</td>
+<td>Tabela backlog (4.4)</td>
+<td>Guilherme Ferreira Brandão, João Pedro Araújo de Freitas Lyra</td>
+</tr>
+<tr>
+<td>16/05/2025</td>
+<td>1.1</td>
+<td>Diagrama de processos (3)</td>
+<td>Ingrid Alves Rocha</td>
+</tr>
+<tr>
+<td>16/05/2025</td>
+<td>1.1</td>
+<td>GQM de medições (5.1)</td>
+<td>Arthur Sismene Carvalho</td>
+</tr>
+<tr>
+<td>16/05/2025</td>
+<td>1.1</td>
+<td>Estratégia de Testes (6.1)</td>
+<td>Nayra Silva Nery</td>
+</tr>
+<tr>
+<td>16/05/2025</td>
+<td>1.1</td>
+<td>Roteiro de Testes (6.2)</td>
+<td>Luis Guilherme Borges, Yasmin Sousa Abdon</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="pontos-de-contribuicao">Pontos de Contribuição<a class="headerlink" href="#pontos-de-contribuicao" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Matrícula</th>
+<th style="text-align: left;">Nome</th>
+<th style="text-align: left;">% de Pontos de Contribuição no trabalho</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">231011892</td>
+<td style="text-align: left;">ARTHUR SISMENE CARVALHO</td>
+<td style="text-align: left;">4,79%</td>
+</tr>
+<tr>
+<td style="text-align: left;">221022480</td>
+<td style="text-align: left;">CARLOS HENRIQUE DE PAIVA MUNIS</td>
+<td style="text-align: left;">5,99%</td>
+</tr>
+<tr>
+<td style="text-align: left;">231030691</td>
+<td style="text-align: left;">GUILHERME FERREIRA BRANDAO</td>
+<td style="text-align: left;">14,97%</td>
+</tr>
+<tr>
+<td style="text-align: left;">232002996</td>
+<td style="text-align: left;">HEYTTOR AUGUSTO DE ASSIS SILVA</td>
+<td style="text-align: left;">7,18%</td>
+</tr>
+<tr>
+<td style="text-align: left;">202045348</td>
+<td style="text-align: left;">INGRID ALVES ROCHA</td>
+<td style="text-align: left;">4,79%</td>
+</tr>
+<tr>
+<td style="text-align: left;">232003661</td>
+<td style="text-align: left;">JOAO PEDRO ARAUJO DE FREITAS LYRA</td>
+<td style="text-align: left;">14,97%</td>
+</tr>
+<tr>
+<td style="text-align: left;">222022135</td>
+<td style="text-align: left;">LETICIA DE CARVALHO DOS SANTOS</td>
+<td style="text-align: left;">12,57%</td>
+</tr>
+<tr>
+<td style="text-align: left;">211045178</td>
+<td style="text-align: left;">LUIS GUILHERME BORGES MONTEIRO</td>
+<td style="text-align: left;">5,99%</td>
+</tr>
+<tr>
+<td style="text-align: left;">221007608</td>
+<td style="text-align: left;">NAYRA SILVA NERY</td>
+<td style="text-align: left;">9,58%</td>
+</tr>
+<tr>
+<td style="text-align: left;">211031440</td>
+<td style="text-align: left;">PEDRO GOMES OLIVEIRA</td>
+<td style="text-align: left;">4,79%</td>
+</tr>
+<tr>
+<td style="text-align: left;">232024026</td>
+<td style="text-align: left;">RIVADALVIO JOAQUIM DA SILVA FILHO</td>
+<td style="text-align: left;">3,59%</td>
+</tr>
+<tr>
+<td style="text-align: left;">232014271</td>
+<td style="text-align: left;">YASMIN SOUSA ABDON</td>
+<td style="text-align: left;">10,79%</td>
+</tr>
+</tbody>
+</table>
+<hr />
+<h2 id="sumario">Sumário<a class="headerlink" href="#sumario" title="Permanent link">&para;</a></h2>
+<ol>
+<li>
+<p><a href="#1-visao-geral-do-produto">Visão Geral do Produto</a><br />
+&nbsp;&nbsp;&nbsp;&nbsp;1.1 <a href="#11-problema">Problema</a><br />
+&nbsp;&nbsp;&nbsp;&nbsp;1.2 <a href="#12-declaracao-de-posicao-do-produto">Declaração de Posição do Produto</a><br />
+&nbsp;&nbsp;&nbsp;&nbsp;1.3 <a href="#13-objetivos-do-produto">Objetivos do Produto</a><br />
+&nbsp;&nbsp;&nbsp;&nbsp;1.4 <a href="#14-tecnologias-utilizadas">Tecnologias Utilizadas</a>  </p>
+</li>
+<li>
+<p><a href="#2-visao-geral-do-projeto">Visão Geral do Projeto</a><br />
+&nbsp;&nbsp;&nbsp;&nbsp;2.1 <a href="#21-ciclo-de-vida">Ciclo de Vida</a><br />
+&nbsp;&nbsp;&nbsp;&nbsp;2.2 <a href="#22-organizacao-do-projeto">Organização do Projeto</a><br />
+&nbsp;&nbsp;&nbsp;&nbsp;2.3 <a href="#23-planejamento-das-fases-eou-iteracoes-do-projeto">Planejamento das Fases</a><br />
+&nbsp;&nbsp;&nbsp;&nbsp;2.4 <a href="#24-matriz-de-comunicacao">Matriz de Comunicação</a><br />
+&nbsp;&nbsp;&nbsp;&nbsp;2.5 <a href="#25-gerenciamento-de-riscos">Gerenciamento de Riscos</a><br />
+&nbsp;&nbsp;&nbsp;&nbsp;2.6 <a href="#26-criterios-de-replanejamento">Critérios de Replanejamento</a>  </p>
+</li>
+<li>
+<p><a href="#3-processo-de-desenvolvimento-de-software">Processo de Desenvolvimento de Software</a>  </p>
+</li>
+<li>
+<p><a href="#4-declaracao-de-escopo-do-projeto">Declaração de Escopo do Projeto</a><br />
+&nbsp;&nbsp;&nbsp;&nbsp;4.1 <a href="#41-backlog-do-produto">Backlog do produto</a><br />
+&nbsp;&nbsp;&nbsp;&nbsp;4.2 <a href="#42-perfis">Perfis</a><br />
+&nbsp;&nbsp;&nbsp;&nbsp;4.3 <a href="#43-cenarios">Cenários</a><br />
+&nbsp;&nbsp;&nbsp;&nbsp;4.4 <a href="#44-backlog">Tabela de Backlog do produto</a>  </p>
+</li>
+<li>
+<p><a href="#5-metricas-e-medicoes">Métricas e Medições</a><br />
+&nbsp;&nbsp;&nbsp;&nbsp;5.1 <a href="#51-gqm-de-medicoes">GQM de medições</a>  </p>
+</li>
+<li>
+<p><a href="#6-testes-de-software">Testes de Software</a><br />
+&nbsp;&nbsp;&nbsp;&nbsp;6.1 <a href="#61-estrategia-de-testes-contendo">Estratégia de testes contendo</a><br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;6.1.1 <a href="#611-niveis-de-testes-abordados">Níveis de Testes Abordados</a><br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;6.1.2 <a href="#612-tipos-de-testes-abordados">Tipos de Testes Abordados</a><br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;6.1.3 <a href="#613-ambientes-de-testes">Ambientes de Testes</a><br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;6.1.4 <a href="#614-metricas-de-analise-do-sonarqube">Métricas de Análise do SonarQube</a><br />
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;6.1.5 <a href="#615-plano-de-testes-unitarios">Plano de Testes Unitários</a><br />
+&nbsp;&nbsp;&nbsp;&nbsp;6.2 <a href="#62-roteiro-de-teste">Roteiro de teste</a>  </p>
+</li>
+<li>
+<p><a href="#7-referencias-bibliograficas">Referências Bibliográficas</a>  </p>
+</li>
+</ol>
+<hr />
+<h2 id="visao-geral-do-produto-e-projeto">VISÃO GERAL DO PRODUTO E PROJETO<a class="headerlink" href="#visao-geral-do-produto-e-projeto" title="Permanent link">&para;</a></h2>
+<h3 id="1visao-geral-do-produto">1.Visão Geral do Produto<a class="headerlink" href="#1visao-geral-do-produto" title="Permanent link">&para;</a></h3>
+<h4 id="11-problema">1.1 Problema<a class="headerlink" href="#11-problema" title="Permanent link">&para;</a></h4>
+<p>O Grupo OTHALA ficou responsável por desenvolver uma aplicação alinhada ao ODS 4 – Educação de Qualidade, que faz parte da Agenda 2030 da Organização das Nações Unidas (ONU). Este objetivo tem como missão “assegurar a educação inclusiva, equitativa e de qualidade, e promover oportunidades de aprendizagem ao longo da vida para todos” (ONU, 2015).
+De forma mais específica, nosso projeto atende diretamente à meta 4.6, que estabelece que, até 2030, “todos os jovens e uma proporção substancial de adultos, homens e mulheres, devem alcançar a alfabetização e o conhecimento básico de matemática” (ONU, 2015).
+Essa meta é essencial, pois reconhece que tanto a alfabetização quanto o domínio de operações matemáticas básicas são direitos fundamentais, que impactam diretamente na autonomia, cidadania, inclusão social e desenvolvimento econômico dos indivíduos. A ONU reforça que o acesso à educação básica é um dos pilares mais importantes para romper ciclos de pobreza, ampliar oportunidades no mercado de trabalho, garantir participação ativa na sociedade e fomentar o desenvolvimento sustentável (ONU, 2015; UNESCO, 2019).
+No entanto, apesar dos esforços internacionais e nacionais, o Brasil ainda enfrenta índices alarmantes de analfabetismo e anumerismo.</p>
+<ul>
+<li>
+<p><strong>Contexto:</strong>
+Atualmente, no Brasil, cerca de 7% da população, o equivalente a 11,4 milhões de pessoas, ainda é analfabeta, de acordo com o censo de 2022 do IBGE. Além disso, a matemática é considerada uma grande dificuldade, sendo apontada pelo Programa Internacional de Avaliação de Alunos (PISA) como "o maior gargalo educacional" do país (Agência Brasil, 2023). Esses números refletem não apenas falhas no sistema educacional, mas também a exclusão de muitos cidadãos dos direitos básicos, como o acesso ao conhecimento, à cidadania e ao mercado de trabalho.
+Esses dados revelam não apenas um problema educacional, mas também um grave problema social, que impacta o desenvolvimento do país. Esse cenário é agravado por diversos fatores, como as dificuldades econômicas, a falta de acesso à tecnologia, metodologias de ensino pouco atrativas e a falta de incentivo familiar. Todos esses aspectos estão organizados no Diagrama de causa e efeito do baixo nível de alfabetização e conhecimento matemático entre jovens e adultos na Figura 1, que ilustra como esses elementos contribuem para o baixo nível de alfabetização e conhecimento matemático entre jovens e adultos no Brasil.</p>
+</li>
+<li>
+<p><strong>Problema:</strong>
+A falta de educação básica tem consequências profundas na sociedade, criando uma barreira significativa para a participação de muitos indivíduos no mercado de trabalho e no consumo. A solução proposta é uma aplicação móvel, que será desenvolvida com o objetivo de oferecer um aprendizado interativo e progressivo. A aplicação seguirá os princípios de Paulo Freire sobre a educação, focando no ensino de leitura e nas quatro operações matemáticas básicas, de forma gradual. Assim, o aplicativo se destina a ensinar tópicos importantes na área de português e matemática como pontuação de frases e resolução de expressões numéricas.</p>
+</li>
+</ul>
+<p><img alt="image" src="https://github.com/user-attachments/assets/601a6261-3ba6-40da-84cf-21d06c68940e" />
+Figura 1 – Diagrama de causa e efeito do baixo nível de alfabetização.Fonte: Os Autores.</p>
+<h4 id="12-declaracao-de-posicao-do-produto">1.2 Declaração de Posição do Produto<a class="headerlink" href="#12-declaracao-de-posicao-do-produto" title="Permanent link">&para;</a></h4>
+<p>O quadro abaixo tem como objetivo descrever de forma clara e concisa o objetivo do grupo Othala em relação ao posicionamento do aplicativo Omega (Ω) no mercado, destacando o público-alvo, a necessidade que busca atender, a proposta de valor e o impacto esperado em sua ausência.</p>
+<p>Quadro 1 -  Declaração de Posição do Produto </p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;"></th>
+<th style="text-align: left;"></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Para:</strong></td>
+<td style="text-align: left;">Pessoas de faixa etária de 15 a 21 anos que sejam semi-analfabetas nível básico, que tenham dificuldade com operações matemáticas, dificuldade em escrita correta, interpretação com um nível de leitura básica.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Necessidade:</strong></td>
+<td style="text-align: left;">Por mais que tenha sido reduzida com o passar dos anos, de acordo com o IBGE, ainda existem cerca de 9,3 milhões de brasileiros com algum nível de analfabetismo, então vê-se a necessidade de auxiliar nessa luta com o projeto desenvolvido.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>O Omega:</strong></td>
+<td style="text-align: left;">O produto é um app mobile com o nome omega (Ω)</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Que:</strong></td>
+<td style="text-align: left;">Acredita-se que o projeto, se bem aplicado, contribuiria significativamente no combate ao analfabetismo e ao anumerismo (a incapacidade de compreender e interpretar informações numéricas e estatísticas no cotidiano).</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Ao contrário:</strong></td>
+<td style="text-align: left;">Acredita-se que, caso nosso produto não exista, a taxa de analfabetismo continuará a mesma, e nenhuma mudança na situação acontecerá.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Nosso produto:</strong></td>
+<td style="text-align: left;">Nosso produto se propõe a ser uma maneira simplificada, rápida, acessível a todos e divertida no aprendizado.</td>
+</tr>
+</tbody>
+</table>
+<p>Fonte: Os autores</p>
+<h4 id="13-objetivos-do-produto">1.3 Objetivos do Produto<a class="headerlink" href="#13-objetivos-do-produto" title="Permanent link">&para;</a></h4>
+<p>Objetivo Principal:
+Auxiliar no combate ao analfabetismo e anumerismo, promovendo a inclusão educacional de jovens e adultos com dificuldades em leitura, escrita e habilidades matemáticas básicas. Conforme definido pela Organização para a Cooperação e Desenvolvimento Econômico (OCDE) e adotado pela UNESCO no indicador 4.6.1 dos Objetivos de Desenvolvimento Sustentável (ODS), “Anumerismo é a capacidade de acessar, usar, interpretar e comunicar informações e ideias matemáticas, a fim de se engajar e lidar com as demandas matemáticas em diversas situações da vida adulta.” (UNESCO-UIS, 2019).
+Objetivo secundário:
+Motivar jovens e adultos a aprenderem a ler, escrever e dominar matemática básica de forma acessível, prática e lúdica, com a finalidade de incentivar o retorno aos estudos e promover sua inclusão social e econômica.</p>
+<h4 id="14-tecnologias-a-serem-utilizadas">1.4 Tecnologias a Serem Utilizadas<a class="headerlink" href="#14-tecnologias-a-serem-utilizadas" title="Permanent link">&para;</a></h4>
+<p>No desenvolvimento desse projeto foram usadas várias ferramentas tecnológicas para realização do aplicativo mobile.São elas:</p>
+<ul>
+<li>Frontend:</li>
+<li>React Native: é uma biblioteca desenvolvida pelo Facebook para a criação de aplicações móveis utilizando JavaScript e React. Com ela, é possível desenvolver aplicativos nativos para Android e iOS utilizando a mesma base de código, promovendo agilidade e reutilização de componentes.</li>
+<li>
+<p>Typescript: é uma linguagem baseada em JavaScript que adiciona tipagem estática ao código. Sua utilização no frontend ajuda a reduzir erros, melhora a legibilidade e proporciona melhor suporte em editores como o VSCode.</p>
+</li>
+<li>
+<p>Backend:</p>
+</li>
+<li>Typescript: Assim como no frontend, o uso de TypeScript no backend aumenta a segurança do código, permitindo o desenvolvimento de APIs mais robustas, principalmente quando utilizado com frameworks como Express.js ou similares.</li>
+<li>
+<p>SQL: Será utilizado um banco de dados relacional com linguagem SQL para armazenamento estruturado das informações da aplicação. A escolha se deve à confiabilidade, maturidade e ampla documentação dessa tecnologia.</p>
+</li>
+<li>
+<p>Ambiente de desenvolvimento:</p>
+</li>
+<li>Github: será utilizado como plataforma de versionamento e colaboração. Com ele, é possível manter o controle de versões do projeto, criar branches para novas funcionalidades, além de facilitar o trabalho em equipe.</li>
+<li>VsCode: Visual Studio Code é o editor de código escolhido por sua leveza, grande variedade de extensões, integração nativa com GitHub, suporte a TypeScript e ótima usabilidade.</li>
+<li>Docker: será utilizado para criar ambientes padronizados de desenvolvimento e produção, evitando problemas relacionados a configurações distintas em máquinas diferentes. Com ele, a aplicação poderá ser facilmente empacotada e executada em qualquer ambiente compatível com Docker.</li>
+</ul>
+<hr />
+<h3 id="2visao-geral-do-projeto">2.Visão Geral do Projeto<a class="headerlink" href="#2visao-geral-do-projeto" title="Permanent link">&para;</a></h3>
+<h4 id="21-ciclo-de-vida-do-projeto-de-desenvolvimento-de-software">2.1 Ciclo de vida do projeto de desenvolvimento de software<a class="headerlink" href="#21-ciclo-de-vida-do-projeto-de-desenvolvimento-de-software" title="Permanent link">&para;</a></h4>
+<p><img alt="Imagem do WhatsApp de 2025-06-29 à(s) 23 27 28_d7840785" src="https://github.com/user-attachments/assets/5b7a8e14-2b34-435f-8cb8-8562b2d6c745" />
+Figura 2 – Diagrama de Ciclo de Vida.Fonte: Os autores.</p>
+<h4 id="22-organizacao-do-projeto">2.2 Organização do Projeto<a class="headerlink" href="#22-organizacao-do-projeto" title="Permanent link">&para;</a></h4>
+<p>O quadro 2 apresenta a organização da equipe envolvida no desenvolvimento do projeto, detalhando os papéis assumidos, as atribuições de cada função, os responsáveis diretos e os participantes colaboradores. A estrutura foi pensada para garantir uma divisão clara de responsabilidades, promovendo o bom andamento do projeto, a integração entre áreas e a entrega eficiente das funcionalidades planejadas.</p>
+<p>Quadro 2 - Organização do Projeto </p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Papel</th>
+<th style="text-align: left;">Atribuições</th>
+<th style="text-align: left;">Responsável</th>
+<th style="text-align: left;">Participantes</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Desenvolvedor Frontend</strong></td>
+<td style="text-align: left;">Implementação da Interface do Usuário (UI)\&lt;br&gt;Criação de Componentes Interativos\&lt;br&gt;Responsividade e Acessibilidade\&lt;br&gt;Integração com APIs\&lt;br&gt;Otimização de Performance\&lt;br&gt;Segurança no Frontend</td>
+<td style="text-align: left;">Arthur Sismene Carvalho</td>
+<td style="text-align: left;">Arthur Sismene Carvalho\&lt;br&gt;Carlos Henrique de Paiva Munis</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Desenvolvedor Backend</strong></td>
+<td style="text-align: left;">Design e Implementação de APIs\&lt;br&gt;Gerenciamento de Banco de Dados\&lt;br&gt;Autenticação e Autorização\&lt;br&gt;Integração com Sistemas Externos\&lt;br&gt;Performance e Escalabilidade do Servidor\&lt;br&gt;Tratamento de Erros e Logs\&lt;br&gt;Segurança no Backend\&lt;br&gt;Manutenção e Deploy da Aplicação</td>
+<td style="text-align: left;">Guilherme Ferreira Brandão</td>
+<td style="text-align: left;">Guilherme Ferreira Brandão\&lt;br&gt;Heyttor Augusto de Assis Silva</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Dono do Produto</strong></td>
+<td style="text-align: left;">Atualizar o escopo do produto\&lt;br&gt;Organizar o escopo das sprints\&lt;br&gt;Validar as entregas</td>
+<td style="text-align: left;">João Pedro Araújo de Freitas Lyra</td>
+<td style="text-align: left;">Ingrid Alves Rocha\&lt;br&gt;João Pedro Araújo de Freitas Lyra</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Analista de Qualidade</strong></td>
+<td style="text-align: left;">Garantir a qualidade do produto\&lt;br&gt;Garantir o cumprimento do conceito de pronto\&lt;br&gt;Realizar inspeções de código</td>
+<td style="text-align: left;">Leticia de Carvalho dos Santos</td>
+<td style="text-align: left;">Leticia de Carvalho dos Santos\&lt;br&gt;Luis Guilherme Borges Monteiro</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Analista de Testes</strong></td>
+<td style="text-align: left;">Análise de Requisitos\&lt;br&gt;Planejamento de Testes\&lt;br&gt;Criação de Casos de Teste\&lt;br&gt;Execução de Testes Manuais\&lt;br&gt;Automação de Testes\&lt;br&gt;Identificação e Reporte de Bugs\&lt;br&gt;Reexecução de Testes Após Correções\&lt;br&gt;Validação de Funcionalidades</td>
+<td style="text-align: left;">Nayra Silva Nery</td>
+<td style="text-align: left;">Nayra Silva Nery\&lt;br&gt;Pedro Gomes Oliveira</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Cliente</strong></td>
+<td style="text-align: left;">Definição de Requisitos\&lt;br&gt;Priorização de Funcionalidades\&lt;br&gt;Validação dos Resultados\&lt;br&gt;Disponibilidade para Feedback\&lt;br&gt;Participação em Reuniões (como refinamento ou revisão)</td>
+<td style="text-align: left;">Rivaldo Joaquim da Silva Filho</td>
+<td style="text-align: left;">Rivaldo Joaquim da Silva Filho\&lt;br&gt;Yasmin Sousa Abdon</td>
+</tr>
+</tbody>
+</table>
+<p>Fonte: Os autores</p>
+<h4 id="23-planejamento-das-fases-eou-iteracoes-do-projeto">2.3 Planejamento das Fases e/ou Iterações do Projeto<a class="headerlink" href="#23-planejamento-das-fases-eou-iteracoes-do-projeto" title="Permanent link">&para;</a></h4>
+<p>O quadro 3 descreve o planejamento das fases e iterações do projeto, organizadas em sprints. Cada sprint representa um ciclo de desenvolvimento com objetivos específicos, prazos definidos e entregas programadas, seguindo a abordagem ágil do manifesto ágil (Manifesto Ágil, 2025). A tabela detalha o produto ou resultado esperado de cada sprint, as datas de início e fim, os entregáveis previstos, os responsáveis diretos pela execução e o percentual de conclusão associado. Ao final, a soma total das entregas corresponde a 100%, refletindo a integralidade do desenvolvimento planejado.</p>
+<p>Quadro 3 -Planejamento das Fases e/ou Iterações do Projeto</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Sprint</th>
+<th style="text-align: left;">Produto (Entrega)</th>
+<th style="text-align: left;">Data Início</th>
+<th style="text-align: left;">Data Fim</th>
+<th style="text-align: left;">Entregável(eis)</th>
+<th style="text-align: left;">Responsáveis</th>
+<th style="text-align: left;">Descrição e % Conclusão</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Sprint 1</strong></td>
+<td style="text-align: left;">Definiu-se que se trata de um app mobile, de combate ao analfabetismo e anumerismo.</td>
+<td style="text-align: left;">14/04/2025</td>
+<td style="text-align: left;">14/05/2025</td>
+<td style="text-align: left;">documentação</td>
+<td style="text-align: left;">João Pedro Araújo de Freitas Lyra</td>
+<td style="text-align: left;">Divisão de tarefas início efetivo do projeto; 11,10%</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Sprint 2</strong></td>
+<td style="text-align: left;">MVP e Planejamento do Projeto</td>
+<td style="text-align: left;">14/05/2025</td>
+<td style="text-align: left;">16/05/2025</td>
+<td style="text-align: left;">documentação</td>
+<td style="text-align: left;">João Pedro Araújo de Freitas Lyra;\&lt;br&gt;Guilherme Ferreira Brandão</td>
+<td style="text-align: left;">Definiu-se o objetivo de cada sprint; 11,10%</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Sprint 3</strong></td>
+<td style="text-align: left;">Reunião com uma parte dos integrantes para definir algumas metodologias para agilizar o processo de desenvolvimento. Também foi feito o primeiro commit de pastas que serão utilizadas para organização do trabalho.</td>
+<td style="text-align: left;">21/05/2025</td>
+<td style="text-align: left;">25/05/2025</td>
+<td style="text-align: left;">Projeto/documentação</td>
+<td style="text-align: left;">João Pedro Araújo de Freitas Lyra;\&lt;br&gt;Guilherme Ferreira Brandão</td>
+<td style="text-align: left;">Definiu-se os times de backend e frontend para trabalhar em conjunto, com a integração sendo feita pelo frontend. Times de teste ficam 1 sprint atrás do time de desenvolvimento. 11,10%</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Sprint 4</strong></td>
+<td style="text-align: left;">Cadastro e Login</td>
+<td style="text-align: left;">26/05/2025</td>
+<td style="text-align: left;">01/06/2025</td>
+<td style="text-align: left;">projeto</td>
+<td style="text-align: left;">todos os integrantes</td>
+<td style="text-align: left;">A Sprint 4 implementou o cadastro e login de usuários, permitindo autenticação segura e integração entre frontend e backend. 11,10%</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Sprint 5</strong></td>
+<td style="text-align: left;">Realização de atividades/teste Sprint 4</td>
+<td style="text-align: left;">02/06/2025</td>
+<td style="text-align: left;">08/06/2025</td>
+<td style="text-align: left;">projeto</td>
+<td style="text-align: left;">todos os integrantes</td>
+<td style="text-align: left;">A Sprint 5 focou na execução das atividades do Sprint 4 e testes das funcionalidades de cadastro e login, garantindo que o sistema estivesse funcionando corretamente e integrando melhorias necessárias. 11,10%</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Sprint 6</strong></td>
+<td style="text-align: left;">Sistema de Progresso/Teste Sprint 5</td>
+<td style="text-align: left;">09/06/2025</td>
+<td style="text-align: left;">15/06/2025</td>
+<td style="text-align: left;">projeto</td>
+<td style="text-align: left;">todos os integrantes</td>
+<td style="text-align: left;">Implementação do sistema de progresso, permitindo aos usuários retomar suas atividades. Também foram realizados testes para validar as entregas do Sprint 5. 11,10%</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Sprint 7</strong></td>
+<td style="text-align: left;">Gerenciamento de Conteúdo/Teste sprint 6</td>
+<td style="text-align: left;">16/06/2025</td>
+<td style="text-align: left;">22/06/2025</td>
+<td style="text-align: left;">projeto</td>
+<td style="text-align: left;">todos os integrantes</td>
+<td style="text-align: left;">Desenvolvimento do gerenciamento de conteúdo para administradores e continuação dos testes das funcionalidades do Sprint 6, implementação da cartilha assegurando que o sistema fosse flexível e sem falhas. 11,10%</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Sprint 8</strong></td>
+<td style="text-align: left;">Teste final e geração de apk/teste sprint 7</td>
+<td style="text-align: left;">23/06/2025</td>
+<td style="text-align: left;">29/06/2025</td>
+<td style="text-align: left;">projeto</td>
+<td style="text-align: left;">todos os integrantes</td>
+<td style="text-align: left;">Testes finais realizados e geração do APK para testar em dispositivos reais. Todos os testes do Sprint foram feitos, garantindo o aplicativo estivesse pronto para distribuição. 11,10%</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Sprint 9</strong></td>
+<td style="text-align: left;">Ajustes finais</td>
+<td style="text-align: left;">30/06/2025</td>
+<td style="text-align: left;">30/06/2025</td>
+<td style="text-align: left;">projeto</td>
+<td style="text-align: left;">todos os integrantes</td>
+<td style="text-align: left;">Correção de erros finais e ajustes de última hora para garantir que o produto estivesse completamente pronto para entrega, com todos os requisitos atendidos. 11,10%</td>
+</tr>
+</tbody>
+</table>
+<p>Fonte: Os autores                      </p>
+<h4 id="24-matriz-de-comunicacao">2.4 Matriz de Comunicação<a class="headerlink" href="#24-matriz-de-comunicacao" title="Permanent link">&para;</a></h4>
+<p>O quadro 4 apresenta a Matriz de Comunicação do projeto. Ela descreve como as informações importantes serão comunicadas, para quem, com que frequência e quais documentos serão gerados a partir dessas comunicações. O objetivo é garantir que a equipe e as partes interessadas estejam sempre alinhadas sobre o andamento do projeto.</p>
+<p>Quadro 4 - Matriz de Comunicação</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Descrição</th>
+<th style="text-align: left;">Área/Envolvidos</th>
+<th style="text-align: left;">Periodicidade</th>
+<th style="text-align: left;">Produtos Gerados</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">• Acompanhamento das Atividades em Andamento</td>
+<td style="text-align: left;">• Equipe do Projeto</td>
+<td style="text-align: left;">• Semanal</td>
+<td style="text-align: left;">• Ata de reunião\&lt;br&gt;• Relatório de situação do projeto</td>
+</tr>
+<tr>
+<td style="text-align: left;">• Acompanhamento dos Riscos, Compromissos, Ações Pendentes, Indicadores</td>
+<td style="text-align: left;">• Equipe do projeto</td>
+<td style="text-align: left;">• Semanal</td>
+<td style="text-align: left;">• feedback do resto equipe sobre as atividades exercidas pela equipe de desenvolvimento</td>
+</tr>
+<tr>
+<td style="text-align: left;">• Comunicar situação do projeto</td>
+<td style="text-align: left;">• Equipe\&lt;br&gt;• Prof/Monitor</td>
+<td style="text-align: left;">• Semanal</td>
+<td style="text-align: left;">• Ata de reunião\&lt;br&gt;• Relatório de situação do projeto</td>
+</tr>
+</tbody>
+</table>
+<p>Fonte: Os autores.  </p>
+<h4 id="25-gerenciamento-de-riscos">2.5 Gerenciamento de Riscos<a class="headerlink" href="#25-gerenciamento-de-riscos" title="Permanent link">&para;</a></h4>
+<p>O quadro 5, a seguir, detalha o plano de Gerenciamento de Riscos do projeto. Nela, são identificados os principais riscos que podem afetar o andamento dos trabalhos, seu grau de exposição, as ações de mitigação para evitar que ocorram e os planos de contingência para lidar com eles caso se concretizem.</p>
+<p>Quadro 5- Gerenciamento de Riscos</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Risco</th>
+<th style="text-align: left;">Grau de Exposição</th>
+<th style="text-align: left;">Mitigação</th>
+<th style="text-align: left;">Plano de Contingência</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Atrasos na entrega</td>
+<td style="text-align: left;">Alto</td>
+<td style="text-align: left;">Estabelecer cronograma com prazos realistas e reuniões de acompanhamento</td>
+<td style="text-align: left;">Priorizar tarefas, focar nas funcionalidades essenciais.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Bugs e falhas no aplicativo</td>
+<td style="text-align: left;">Alto</td>
+<td style="text-align: left;">Testar cada funcionalidade antes de avançar para a próxima etapa</td>
+<td style="text-align: left;">Corrigir imediatamente, usar ferramentas de depuração e controle de versões</td>
+</tr>
+<tr>
+<td style="text-align: left;">Falta de engajamento da equipe</td>
+<td style="text-align: left;">Médio</td>
+<td style="text-align: left;">Divisão clara de tarefas, comunicação constante e metas curtas</td>
+<td style="text-align: left;">Redistribuir tarefas</td>
+</tr>
+<tr>
+<td style="text-align: left;">Má gestão do tempo</td>
+<td style="text-align: left;">Alto</td>
+<td style="text-align: left;">Uso de cronogramas e métodos ágeis</td>
+<td style="text-align: left;">Eliminar ou adiar itens de menor prioridade para garantir entrega mínima viável</td>
+</tr>
+<tr>
+<td style="text-align: left;">Problemas com ferramentas</td>
+<td style="text-align: left;">Médio</td>
+<td style="text-align: left;">Usar ferramentas estáveis, backups frequentes e controle de versão (Git)</td>
+<td style="text-align: left;">Mudar a ferramenta, restaurar backup</td>
+</tr>
+</tbody>
+</table>
+<p>Fonte: Os autores</p>
+<h4 id="251-criterios-para-atrasos-na-entrega-risco-alto">2.5.1 Critérios para atrasos na entrega (Risco alto)<a class="headerlink" href="#251-criterios-para-atrasos-na-entrega-risco-alto" title="Permanent link">&para;</a></h4>
+<p>A identificação de possíveis atrasos de entrega é importante para garantir a fluidez e saúde do projeto e pensar em possíveis ações corretivas. Os seguintes critérios foram utilizados para classificar uma situação como risco alto relacionado a atrasos na entrega: Atraso superior a 20% no cronograma planejado
+Caso o avanço do projeto esteja mais de 20% abaixo do previsto, isso será considerado um indicador de risco alto, exigindo revisão imediata do cronograma e ações corretivas.
+Duas sprints consecutivas com menos de 70% das entregas concluídas 
+A baixa taxa de conclusão nas sprints consecutivas pode indicar falhas no planejamento, dimensionamento incorreto das tarefas ou problemas de execução. Isso configura um risco significativo para a continuidade e o cumprimento dos prazos do projeto.
+Impossibilidade de cumprimento de um marco crítico na data prevista 
+Caso um marco (milestone) essencial para o projeto esteja em risco ou seja inviável de ser entregue na data estipulada, isso será classificado como um risco alto, demandando replanejamento estratégico.</p>
+<h4 id="26-criterios-de-replanejamento">2.6  Critérios de Replanejamento<a class="headerlink" href="#26-criterios-de-replanejamento" title="Permanent link">&para;</a></h4>
+<h4 id="261-criterios-relacionados-ao-cronograma-de-entregas">2.6.1 Critérios relacionados ao cronograma de entregas<a class="headerlink" href="#261-criterios-relacionados-ao-cronograma-de-entregas" title="Permanent link">&para;</a></h4>
+<p>Para um controle de projeto proativo e eficaz, foram definidos critérios quantitativos que funcionam como indicadores de alerta. O quadro 6 abaixo detalha esses critérios, associando cada um a um risco específico e a um plano de ação predefinido. Este plano se divide em ações de mitigação, de caráter preventivo e contínuo, e ações de contingência, a serem executadas caso o critério de alerta seja atingido. O objetivo é formalizar as respostas a desvios, agilizando a tomada de decisão.</p>
+<p>Quadro 6 - Critérios relacionados ao cronograma de entregas</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Critério</th>
+<th style="text-align: left;">Descrição</th>
+<th style="text-align: left;">Risco Associado</th>
+<th style="text-align: left;">Plano de Mitigação/Contingência</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Atraso de Sprint</td>
+<td style="text-align: left;">Sprint com menos de 70% das histórias concluídas</td>
+<td style="text-align: left;">Risco de atraso na entrega final</td>
+<td style="text-align: left;"><strong>Mitigação:</strong> Revisão diária do progresso das tarefas\&lt;br&gt;<strong>Contingência:</strong> Realocação de recursos ou ajuste de escopo</td>
+</tr>
+<tr>
+<td style="text-align: left;">Acúmulo de débito técnico</td>
+<td style="text-align: left;">Débito técnico ultrapassando 20% do backlog total</td>
+<td style="text-align: left;">Risco de comprometimento de qualidade</td>
+<td style="text-align: left;"><strong>Mitigação:</strong> Reservar tempo na Sprint para tratamento de débitos\&lt;br&gt;<strong>Contingência:</strong> Sprint dedicada à redução de débito técnico</td>
+</tr>
+<tr>
+<td style="text-align: left;">Desvio no tempo de entrega</td>
+<td style="text-align: left;">Desvio superior a 15% do planejado por duas sprints consecutivas</td>
+<td style="text-align: left;">Risco de não cumprimento do prazo final</td>
+<td style="text-align: left;"><strong>Mitigação:</strong> Monitoramento diário das estimativas\&lt;br&gt;<strong>Contingência:</strong> Revisão do Escopo ou aumento da equipe</td>
+</tr>
+</tbody>
+</table>
+<p>Fonte: Os autores</p>
+<hr />
+<h4 id="262-criterios-relacionados-aos-requisitos-e-usabilidade">2.6.2 Critérios relacionados aos requisitos e usabilidade<a class="headerlink" href="#262-criterios-relacionados-aos-requisitos-e-usabilidade" title="Permanent link">&para;</a></h4>
+<p>Para assegurar a aderência do produto aos requisitos e a sua aceitação pelo público-alvo, foram estabelecidos critérios de monitoramento específicos, detalhados no Quadro 7. Esta matriz associa gatilhos quantitativos, como o percentual de alterações no escopo ou o feedback dos usuários, a riscos específicos de qualidade e satisfação. Para cada critério, um plano de mitigação e contingência é definido para orientar a equipe na tomada de ações corretivas e preventivas de forma ágil e estruturada.</p>
+<p>Quadro 7 - Critérios relacionados aos requisitos e usabilidade</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Critério</th>
+<th style="text-align: left;">Descrição</th>
+<th style="text-align: left;">Risco associado</th>
+<th style="text-align: left;">Plano de mitigação/Contingência</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Alterações significativas em requisitos</td>
+<td style="text-align: left;">Mudanças que impactam mais de 25% das funcionalidades</td>
+<td style="text-align: left;">Risco de escopo inadequado</td>
+<td style="text-align: left;"><strong>Mitigação:</strong> Validação contínua com stakeholders\&lt;br&gt;<strong>Contingência:</strong> Congelamento de escopo com priorização</td>
+</tr>
+<tr>
+<td style="text-align: left;">Baixa usabilidade para o público-alvo</td>
+<td style="text-align: left;">Menos dos 70% dos usuários analfabetos conseguirem completar tarefas básicas</td>
+<td style="text-align: left;">Risco de baixa adoção</td>
+<td style="text-align: left;"><strong>Mitigação:</strong> Testes frequentes com usuários reais\&lt;br&gt;<strong>Contingência:</strong> Redesenho de interface com foco em acessibilidade</td>
+</tr>
+<tr>
+<td style="text-align: left;">Feedback negativo recorrente</td>
+<td style="text-align: left;">Funcionalidade com feedback negativo de mais de 50% dos usuários</td>
+<td style="text-align: left;">Risco de insatisfação do cliente</td>
+<td style="text-align: left;"><strong>Mitigação:</strong> Protótipos validados antes da implementação\&lt;br&gt;<strong>Contingência:</strong> Redesenho da funcionalidade problemática</td>
+</tr>
+</tbody>
+</table>
+<p>Fonte: Os autores</p>
+<hr />
+<h4 id="263-criterios-relacionados-a-qualidade-e-testes">2.6.3 Critérios relacionados à qualidade e testes<a class="headerlink" href="#263-criterios-relacionados-a-qualidade-e-testes" title="Permanent link">&para;</a></h4>
+<p>Com o objetivo de assegurar a qualidade do produto final e minimizar riscos ao longo do desenvolvimento, é essencial estabelecer critérios específicos que orientem a equipe em relação à identificação e mitigação de falhas. O Quadro 8 a seguir apresenta os principais critérios relacionados à qualidade e testes, detalhando suas descrições, os riscos associados e os respectivos planos de mitigação e contingência. Esses critérios foram definidos com base em práticas consolidadas de engenharia de software, como o uso de TDD, revisões de código e estratégias de refatoração, visando garantir entregas mais estáveis, funcionais e alinhadas aos requisitos do projeto.</p>
+<p>Quadro 8 - Critérios relacionados à qualidade e testes</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Critérios</th>
+<th style="text-align: left;">Descrição</th>
+<th style="text-align: left;">Risco associado</th>
+<th style="text-align: left;">Plano de mitigação/Contingência</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Taxa de bugs elevadas</td>
+<td style="text-align: left;">Mais de 5 bugs críticos/bloqueadores por Sprint</td>
+<td style="text-align: left;">Risco de instabilidade do produto</td>
+<td style="text-align: left;"><strong>Mitigação:</strong> Práticas TDD e revisão de código\&lt;br&gt;<strong>Contingência:</strong> Sprint focada em correção de bugs</td>
+</tr>
+<tr>
+<td style="text-align: left;">Reprovação em homologação</td>
+<td style="text-align: left;">Funcionalidade reprovada mais de 2 vezes</td>
+<td style="text-align: left;">Risco de atraso na entrega</td>
+<td style="text-align: left;"><strong>Mitigação:</strong> Testes de aceitação\&lt;br&gt;<strong>Contingência:</strong> Revisão dos critérios de aceitação</td>
+</tr>
+<tr>
+<td style="text-align: left;">Falhas recorrentes</td>
+<td style="text-align: left;">Mesmo componente com falhas em mais de 3 ciclos</td>
+<td style="text-align: left;">Risco de degradação da arquitetura</td>
+<td style="text-align: left;"><strong>Mitigação:</strong> Revisão arquitetural proativa\&lt;br&gt;<strong>Contingência:</strong> Refatoração do componente problemático</td>
+</tr>
+</tbody>
+</table>
+<p>Fonte:Os Autores.</p>
+<hr />
+<h4 id="264-criterios-relacionados-a-recursos-e-infraestrutura">2.6.4 Critérios relacionados a recursos e infraestrutura<a class="headerlink" href="#264-criterios-relacionados-a-recursos-e-infraestrutura" title="Permanent link">&para;</a></h4>
+<p>A equipe envolvida e os recursos disponíveis exercem papel fundamental na viabilidade e continuidade do desenvolvimento de software. Limitações nesse âmbito podem comprometer diretamente a estabilidade do projeto e sua entrega dentro dos prazos estipulados. Dessa forma, o Quadro 9 apresenta os principais critérios relacionados a recursos e recursos humanos, descrevendo os riscos associados e propondo estratégias de mitigação e contingência. Esses critérios foram definidos com o objetivo de antecipar falhas técnicas, garantir a compatibilidade entre sistemas, assegurar a disponibilidade de ferramentas essenciais e promover a adaptação contínua frente a eventuais obstáculos técnicos.</p>
+<p>Quadro 9 - Critérios relacionados a recursos humanos</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Critérios</th>
+<th style="text-align: left;">Descrição</th>
+<th style="text-align: left;">Risco associado</th>
+<th style="text-align: left;">Plano de mitigação/Contingência</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Limitações técnicas</td>
+<td style="text-align: left;">Identificação de limitações que comprometam a arquitetura do sistema</td>
+<td style="text-align: left;">Risco de inviabilidade técnica</td>
+<td style="text-align: left;"><strong>Mitigação:</strong> Provas de conceito antecipadas.\&lt;br&gt;<strong>Contingência:</strong> Redesenho da solução técnica.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Problemas de integração</td>
+<td style="text-align: left;">Falhas de integração persistentes por mais de uma sprint</td>
+<td style="text-align: left;">Risco de incompatibilidade de sistemas</td>
+<td style="text-align: left;"><strong>Mitigação:</strong> Testes de integração contínuos.\&lt;br&gt;<strong>Contingência:</strong> Desenvolvimento de adaptadores ou APIs alternativas.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Indisponibilidade de ferramentas de desenvolvimento</td>
+<td style="text-align: left;">Falhas nas ferramentas utilizadas para o desenvolvimento do sistema, como IDEs, repositórios, etc</td>
+<td style="text-align: left;">Risco de interrupção no progresso do desenvolvimento</td>
+<td style="text-align: left;"><strong>Mitigação:</strong> Garantir a utilização de ferramentas estáveis e backups frequentes.\&lt;br&gt;<strong>Contingência:</strong> Mudar a ferramenta, restaurar backup.</td>
+</tr>
+</tbody>
+</table>
+<p>Fonte: Os autores</p>
+<hr />
+<h4 id="265-processo-de-monitoramento-e-atualizacao">2.6.5 Processo de monitoramento e atualização:<a class="headerlink" href="#265-processo-de-monitoramento-e-atualizacao" title="Permanent link">&para;</a></h4>
+<p>Os critérios de replanejamento serão revisados e atualizados com o decorrer do trabalho, para que não ocorram débitos técnicos que atrapalhem o andamento do projeto :
+- Ao final de cada ciclo/Sprint
+- Após a identificação de novos riscos
+- Quando um replanejamento for realizado
+Cada atualização  nos critérios  de planejamento ou qualquer alteração no projeto que demande replanejamento resultará em uma nova versão deste documento, seguindo controle de versões estabelecido. </p>
+<h3 id="3processo-de-desenvolvimento-de-software">3.PROCESSO DE DESENVOLVIMENTO DE SOFTWARE<a class="headerlink" href="#3processo-de-desenvolvimento-de-software" title="Permanent link">&para;</a></h3>
+<h4 id="metodologia-adotada">Metodologia Adotada<a class="headerlink" href="#metodologia-adotada" title="Permanent link">&para;</a></h4>
+<p>De acordo com estudos sobre a metodologia Scrum como Scrum Guide de Ken Schwaber e Jeff Sutherland realizamos:
+A equipe optou por utilizar uma abordagem baseada em metodologias ágeis, especialmente os conceitos do Scrum e do XP. A aplicação desses métodos visa garantir uma organização eficiente do trabalho, entregas contínuas, priorização de valor para o usuário e capacidade de adaptação ao longo do projeto</p>
+<h4 id="visao-geral-do-processo">Visão Geral do Processo<a class="headerlink" href="#visao-geral-do-processo" title="Permanent link">&para;</a></h4>
+<p>O processo de desenvolvimento é cíclico e iterativo, seguindo os seguintes estágios principais:
+- Backlog e Escopo: levantamento inicial das funcionalidades desejadas, criando uma lista priorizada de tarefas.
+- Design de UI/UX: criação de protótipos de interface e fluxos de navegação.
+- Sprints: o desenvolvimento é dividido em ciclos curtos (sprints), com entregas incrementais e reuniões de planejamento, acompanhamento e retrospectiva.
+- Testes: validação constante do sistema com testes manuais e automatizados.
+- Desenvolvimento Continuo: integração frequente de novas funcionalidades e correções.</p>
+<h4 id="procedimentos-tecnicos">Procedimentos Técnicos<a class="headerlink" href="#procedimentos-tecnicos" title="Permanent link">&para;</a></h4>
+<p>Nesta seção, são descritas as principais decisões técnicas adotadas para a implementação da solução:
+- Backend: desenvolvido em TypeScript, proporcionando maior segurança e legibilidade no código.
+- Banco de Dados: utiliza o PostgreSQL para uma solução robusta e confiável para armazenamento e gerenciamento das informações.
+- Frontend: construído com React Native utilizando Expo, permitindo maior agilidade no desenvolvimento de aplicativos mobile.</p>
+<h4 id="metodos-utilizados">Métodos Utilizados<a class="headerlink" href="#metodos-utilizados" title="Permanent link">&para;</a></h4>
+<p>Durante o desenvolvimento do projeto,foram adotadas metodologias que proporcionam organização,flexibilidade e organização do processo, dentre elas destacam-se:</p>
+<ul>
+<li>Aplicação de práticas do Scrum e XP, com foco em:</li>
+<li>Desenvolvimento incremental.
+     O sistema foi construído por etapas, com funcionalidades sendo implementadas gradualmente, o que permitiu validar e ajustar o projeto ao longo do tempo.</li>
+<li>Comunicação constante entre os membros da equipe.
+     Foram realizadas reuniões frequentes entre os membros do grupo para discutir questões pertinentes do projeto e garantir que todos estavam na mesma página.</li>
+<li>Entregas frequentes e com feedback.</li>
+<li>Código limpo e práticas como refatoração (quando aplicável).
+     Buscou-se manter boas práticas de programação  e a qualidade do código para manter a legibilidade e entendimento do que foi implementado.</li>
+<li>O projeto é orientado a funções, priorizando funcionalidades com valor claro ao usuário.</li>
+</ul>
+<h4 id="ferramentas">Ferramentas<a class="headerlink" href="#ferramentas" title="Permanent link">&para;</a></h4>
+<p>A escolha das ferramentas foi orientada pelos princípios de produtividade, padronização e colaboração entre os membros da equipe.
+- VSCode: Ambiente de desenvolvimento utilizado por toda a equipe por sua flexibilidade, integração com extensões e suporte a múltiplas linguagens. <br />
+- GitHub: plataforma de versionamento e colaboração no código, permitindo controle de versão, integração contínua e rastreamento de mudança de código.
+- Docker: utilizado para criação de ambientes consistentes e padronizados, garantindo consistência e facilidade de implementação.</p>
+<p><img alt="Diagrama em branco (1) 1" src="https://github.com/user-attachments/assets/47fe5d2e-2d65-4dc5-9b5c-65461c094568" /></p>
+<hr />
+<h3 id="4declaracao-de-escopo-do-projeto">4.DECLARAÇÃO DE ESCOPO DO PROJETO<a class="headerlink" href="#4declaracao-de-escopo-do-projeto" title="Permanent link">&para;</a></h3>
+<h4 id="41-backlog-do-produto">4.1 Backlog do produto<a class="headerlink" href="#41-backlog-do-produto" title="Permanent link">&para;</a></h4>
+<p>O backlog do produto foi construído com base em pesquisas sobre a temática da ODS 4 (analfabetismo e anumerismo em território nacional), reuniões de brainstorm semanais, levando em consideração o prazo até entrega final, decidiu-se focar na simplicidade e interatividade da aplicação mobile, definiu-se graus de prioridade(must, should, could), conforme a importância de cada parte.</p>
+<h4 id="42-perfis">4.2 Perfis<a class="headerlink" href="#42-perfis" title="Permanent link">&para;</a></h4>
+<ul>
+<li>Aluno: usuário que acessa  os conteúdos e faz os exercícios.</li>
+<li>Administrador: gerencia os conteúdos, usuários, questões e progresso do usuário.
+Para garantir a segurança, organização e usabilidade do sistema, é fundamental estabelecer perfis de acesso com permissões específicas para cada tipo de usuário. Essa definição permite o controle adequado sobre as funcionalidades disponíveis a cada grupo, além de facilitar a manutenção e o gerenciamento da aplicação. O quadro 10 apresenta os principais perfis de acesso, com suas respectivas características e permissões, diferenciando, por exemplo, o perfil de Aluno, voltado ao consumo de conteúdo educacional, e o de Administrador, responsável pela gestão de usuários e conteúdos do sistema, porém este é uma simples proposta de melhoria do projeto, não sendo item necessário para o funcionamento do projeto.</li>
+</ul>
+<p>Quadro 10 : Perfis de acesso</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">#</th>
+<th style="text-align: left;">Nome do perfil</th>
+<th style="text-align: left;">Características do perfil</th>
+<th style="text-align: left;">Permissões de acesso</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><code>&lt;1/&gt;</code></td>
+<td style="text-align: left;">Aluno</td>
+<td style="text-align: left;">Usuário que acessa os conteúdos educacionais.</td>
+<td style="text-align: left;">Acesso às aulas, e as listas de exercícios.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><code>&lt;2&gt;</code></td>
+<td style="text-align: left;">Administrador</td>
+<td style="text-align: left;">Responsável por manter os perfis de acesso da aplicação, criar novos usuários, alterar usuários já existentes, ou excluir usuários (Manter usuários).</td>
+<td style="text-align: left;">Permissões para criar, editar e remover conteúdos educacionais, gerenciar usuários, visualizar estatísticas e relatórios de desempenho dos alunos, configurar categorias, níveis e parâmetros do sistema.</td>
+</tr>
+</tbody>
+</table>
+<p>Fonte: Os autores</p>
+<h4 id="43-cenarios">4.3 Cenários<a class="headerlink" href="#43-cenarios" title="Permanent link">&para;</a></h4>
+<p>Durante o desenvolvimento do sistema Omega, foram definidos diferentes cenários funcionais que representam os principais blocos de funcionalidades a serem implementadas ao longo das sprints. Esses cenários orientam o planejamento e a execução das entregas incrementais, garantindo que cada funcionalidade essencial seja abordada de forma estruturada e em conformidade com as prioridades do projeto. O quadro 11 apresenta os cenários funcionais identificados, com sua respectiva numeração, descrição e a sprint prevista para sua realização.</p>
+<p>Quadro 11 : Cenários funcionais</p>
+<table>
+<thead>
+<tr>
+<th>Nº</th>
+<th>Cenário</th>
+<th>Sprint</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>01</td>
+<td>Cadastro e Login</td>
+<td>1</td>
+</tr>
+<tr>
+<td>02</td>
+<td>Realização de Atividades</td>
+<td>2</td>
+</tr>
+<tr>
+<td>03</td>
+<td>Sistema de Progresso</td>
+<td>3</td>
+</tr>
+<tr>
+<td>04</td>
+<td>Gerenciamento de Conteúdo</td>
+<td>4</td>
+</tr>
+<tr>
+<td>05</td>
+<td>Testes, cartilha e Geração do APK</td>
+<td>5</td>
+</tr>
+</tbody>
+</table>
+<p>Fonte: Os autores</p>
+<h4 id="44-backlog">4.4 Backlog<a class="headerlink" href="#44-backlog" title="Permanent link">&para;</a></h4>
+<p>O backlog do produto é uma lista priorizada de funcionalidades e requisitos necessários para o desenvolvimento do sistema, organizada em sprints e acompanhada de histórias de usuário (user stories) que traduzem as necessidades dos usuários finais. Essa estrutura permite que a equipe compreenda, planeje e implemente as entregas de forma iterativa e incremental. O quadro 12 apresenta o backlog do produto do sistema Omega (Ω), detalhando a numeração dos itens, tipo e prioridade dos requisitos, uma descrição resumida de cada um deles, bem como as histórias de usuário associadas, promovendo uma visão clara e orientada ao valor para o desenvolvimento do sistema.</p>
+<p>Quadro 12 -  Backlog do produto</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Numeração (Cenário/ requisito)</th>
+<th style="text-align: left;">Sprint</th>
+<th style="text-align: left;">Nome do requisito</th>
+<th style="text-align: left;">Tipo de requisito (Funcional / não funcional)</th>
+<th style="text-align: left;">Priorização do requisito (Must, Should, Could)</th>
+<th style="text-align: left;">Descrição sucinta do requisito</th>
+<th style="text-align: left;">User stories (U.S.) associadas</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>1.1</strong></td>
+<td style="text-align: left;">1</td>
+<td style="text-align: left;">Cadastro de Usuário</td>
+<td style="text-align: left;">Funcional</td>
+<td style="text-align: left;">Must</td>
+<td style="text-align: left;">O sistema deve permitir que o aluno crie uma conta com email e senha</td>
+<td style="text-align: left;">Como aluno, quero poder me cadastrar para acessar o conteúdo do aplicativo.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>1.2</strong></td>
+<td style="text-align: left;">1</td>
+<td style="text-align: left;">Login de Usuário</td>
+<td style="text-align: left;">Funcional</td>
+<td style="text-align: left;">Must</td>
+<td style="text-align: left;">O sistema deve permitir autenticação por email e senha.</td>
+<td style="text-align: left;">Como aluno, quero poder fazer login para continuar meus estudos.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>2.1</strong></td>
+<td style="text-align: left;">2</td>
+<td style="text-align: left;">Questões de português</td>
+<td style="text-align: left;">Funcional</td>
+<td style="text-align: left;">Must</td>
+<td style="text-align: left;">Deve ter 3 questões em cada um dos 3 níveis em português. 1- estrutura gramatical. 2- pontuação e 3- interpretação básica de texto</td>
+<td style="text-align: left;">Como aluno, quero poder realizar questões de portugues.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>2.2</strong></td>
+<td style="text-align: left;">2</td>
+<td style="text-align: left;">Questões de matemática e tela de regras</td>
+<td style="text-align: left;">Funcional</td>
+<td style="text-align: left;">Must</td>
+<td style="text-align: left;">Deve ter 3 questões em cada um dos 3 níveis em matemática. 1- multiplicação (tabuada). 2- divisão/fração. 3- expressão numérica (soma, subtração, divisão, multiplicação)</td>
+<td style="text-align: left;">Como aluno, quero poder realizar questões e aprender matemática básica, também quero entender como obter acesso ao material de estudo.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>3.1</strong></td>
+<td style="text-align: left;">3</td>
+<td style="text-align: left;">Sistema de progresso</td>
+<td style="text-align: left;">Funcional</td>
+<td style="text-align: left;">Could</td>
+<td style="text-align: left;">Deve ser possível recomeçar da atividade onde o usuário parou na última interação com o aplicativo; deve haver uma tela de regras para explicar o funcionamento básico do botão omega ao usuário.</td>
+<td style="text-align: left;">Como aluno, quero poder ter continuidade nos estudos com um sistema de progressão</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>3.2</strong></td>
+<td style="text-align: left;">3</td>
+<td style="text-align: left;">Sistema de correção</td>
+<td style="text-align: left;">Funcional</td>
+<td style="text-align: left;">Must</td>
+<td style="text-align: left;">Ao término de cada nível, será dado ao usuário um feedback sobre as atividades, erros e acertos, corretos grifados em verde, errados em grifados vermelha, e se tiver uma taxa de acerto menor que 2, o usuário volta ao início do nível, após o feedback visual, o teórico deverá ser acessado ao clicar no botão omega(Ω) disponível na tela de regras e nas atividades.</td>
+<td style="text-align: left;">Como aluno, quero saber quais questões acertei e quais errei.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>4.1</strong></td>
+<td style="text-align: left;">4</td>
+<td style="text-align: left;">Painel do administrador</td>
+<td style="text-align: left;">Funcional</td>
+<td style="text-align: left;">Should</td>
+<td style="text-align: left;">O administrador deve poder adicionar, editar ou remover atividades dentro dos níveis. Não há acesso direto do administrador aos dados do usuário, apenas ao sistema de questões.</td>
+<td style="text-align: left;">Como administrador, quero atualizar os conteúdos do aplicativo.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>4.2</strong></td>
+<td style="text-align: left;">4</td>
+<td style="text-align: left;">Aba de créditos</td>
+<td style="text-align: left;">Não funcional</td>
+<td style="text-align: left;">Should</td>
+<td style="text-align: left;">O aplicativo deve ter uma aba que indica os créditos de cada questão.</td>
+<td style="text-align: left;">Como aluno, quero saber o material bibliográfico das questões que realizo para aprofundar os estudos</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>5.1</strong></td>
+<td style="text-align: left;">5</td>
+<td style="text-align: left;">Testes finais, geração do apk</td>
+<td style="text-align: left;">Funcional</td>
+<td style="text-align: left;">Must</td>
+<td style="text-align: left;">O aplicativo deve funcionar perfeitamente sem bugs ou erros, mesmo havendo testes após cada sprint será feito um teste geral intenso no final. Logo após esse teste intenso será feito o deploy que no caso é a geração do APK.</td>
+<td style="text-align: left;">Como aluno, quero baixar o aplicativo em meu celular (android), ter uma boa experiência com o app, realizando as atividades de forma linear e com as funcionalidades sem bugs.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>5.2</strong></td>
+<td style="text-align: left;">5</td>
+<td style="text-align: left;">Modo Offline</td>
+<td style="text-align: left;">Não funcional</td>
+<td style="text-align: left;">Could</td>
+<td style="text-align: left;">O aplicativo deve funcionar parcialmente sem conexão, salvando a progressão do usuário.</td>
+<td style="text-align: left;">Como aluno, quero poder estudar mesmo sem internet.</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>5.3</strong></td>
+<td style="text-align: left;">5</td>
+<td style="text-align: left;">Cartilha</td>
+<td style="text-align: left;">Funcional</td>
+<td style="text-align: left;">Must</td>
+<td style="text-align: left;">A Cartilha deve ser acessível ao clicar em qualquer botão com o símbolo do aplicativo para acessar os materiais usados na criação de questões, livros e recomendações de estudo.</td>
+<td style="text-align: left;">Como aluno, quero saber ter acesso ao conteúdo de cada questão que errei e auxílio para continuar estudando mesmo chegando ao fim das questões do app.</td>
+</tr>
+</tbody>
+</table>
+<p>Fonte: Os autores.</p>
+<hr />
+<h3 id="5metricas-e-medicoes">5.MÉTRICAS E MEDIÇÕES<a class="headerlink" href="#5metricas-e-medicoes" title="Permanent link">&para;</a></h3>
+<h4 id="51-gqm-de-medicoes">5.1 GQM de medições<a class="headerlink" href="#51-gqm-de-medicoes" title="Permanent link">&para;</a></h4>
+<p>Para garantir a qualidade e eficácia do aplicativo mobile voltado à alfabetização de pessoas analfabetas e semianalfabetas, adotamos a abordagem GQM (Goal / Question / Metric) como método de definição e acompanhamento de métricas.
+- Objetivo (Goal)
+Analisar o aplicativo de alfabetização com o propósito de avaliar sua usabilidade, eficácia pedagógica e impacto no aprendizado, do ponto de vista dos usuários e educadores, no contexto da inclusão digital e social.
+- Questões (Questions)
+  - O aplicativo é fácil de usar, mesmo por pessoas com baixa familiaridade com tecnologia?
+  - Os usuários estão conseguindo se desenvolver com o uso do aplicativo?
+  - Quanto tempo os usuários dedicam ao uso do app diariamente?
+  - Quanto tempo os usuários dedicam ao uso do app diariamente?
+  - O desempenho dos usuários melhora com o uso contínuo do aplicativo?
+  - O conteúdo é acessível e adequado aos diferentes níveis de alfabetização?</p>
+<ul>
+<li>Métricas (Metrics)</li>
+<li>Taxa de conclusão de atividades:  Percentual de atividades concluídas com sucesso por usuário, indicando o progresso de aprendizagem.</li>
+<li>Tempo médio por sessão de uso:  Média de tempo gasto pelos usuários durante cada sessão, refletindo o nível de engajamento.</li>
+<li>Número de palavras aprendidas por semana: Quantidade média de palavras aprendidas por usuário, semanalmente.</li>
+<li>Número de acessos diários/mensais: Frequência com que os usuários acessam o aplicativo, tanto diariamente quanto mensalmente.</li>
+<li>Nível de erro nas atividades de escrita e leitura: Percentual de erros antes e após determinado período de uso, indicando evolução nas habilidades de escrita e leitura.</li>
+<li>Pontuação média nas avaliações integradas ao app: Média das notas ou pontuações obtidas pelos usuários nas avaliações de conhecimento.</li>
+<li>Tempo até o abandono da aplicação (churn rate): Tempo médio até que os usuários abandonem o aplicativo, indicando a satisfação e o engajamento do usuário.</li>
+<li>Feedback qualitativo dos usuários e educadores: Avaliação subjetiva sobre a eficácia e a experiência com o aplicativo, coletada por meio de formulários ou entrevistas.</li>
+<li>Quantidade de recursos multimodais utilizados: Número de recursos como áudio, imagens e vídeos empregados pelos usuários para facilitar a compreensão do conteúdo.</li>
+<li>Formas alternativas e/ou informais</li>
+<li>Modelo ISO/IEC 25010 ( Funcionalidade, Usabilidade, Confiabilidade, Eficiência, Portabilidade, Manutenibilidade, Segurança, Compatibilidade).</li>
+<li>Indicadores de Acessibilidade Digital (WCAG)</li>
+<li>Análise de Logs e Eventos</li>
+<li>Observação direta dos usuários</li>
+<li>Testes com Usuários</li>
+<li>Relatos de educadores e mediadores</li>
+<li>Observações de uso em campo</li>
+</ul>
+<p><strong>Métricas da Sprints</strong></p>
+<p>A avaliação contínua do desempenho do sistema e do engajamento dos usuários é essencial para validar as entregas realizadas em cada sprint. Por meio de métricas quantitativas e qualitativas, é possível acompanhar a evolução do produto, identificar pontos de melhoria e tomar decisões baseadas em dados. O quadro 13 apresenta as métricas obtidas ao longo das sprints, incluindo indicadores como taxa de conclusão de atividades, tempo médio por sessão, número de acessos, taxa de erro, feedback dos usuários e recursos multimodais utilizados, permitindo uma análise abrangente da eficácia do sistema Omega.</p>
+<p>Quadro 13: Métrica da Sprint 1</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Métrica</th>
+<th style="text-align: left;">Tempo/valor</th>
+<th style="text-align: left;">Observações</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Tempo da Sprint</td>
+<td style="text-align: left;">7 dias</td>
+<td style="text-align: left;">Nada significativo nesse tema.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Desvio do cronograma</td>
+<td style="text-align: left;">15%</td>
+<td style="text-align: left;">Houve bugs no sistema de usuário, rapidamente solucionado, 1 dia.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Tempo de Resolução</td>
+<td style="text-align: left;">7 dias</td>
+<td style="text-align: left;">6 dias de trabalho 1 de resolução de bugs.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Precisão das Estimativas</td>
+<td style="text-align: left;">65-70%</td>
+<td style="text-align: left;">Os testes realizados deram como resultado 65-70% de precisão, no critério dos testes de software.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Taxa de retrabalho</td>
+<td style="text-align: left;">15%</td>
+<td style="text-align: left;">Foi necessário solucionar os bugs.</td>
+</tr>
+</tbody>
+</table>
+<p>Fonte: Os autores</p>
+<p>Quadro 14: Métrica da Sprint 2</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Métrica</th>
+<th style="text-align: left;">Tempo/valor</th>
+<th style="text-align: left;">Observações</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Tempo da Sprint</td>
+<td style="text-align: left;">7 dias</td>
+<td style="text-align: left;">Nada de significativo neste tema.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Desvio do cronograma</td>
+<td style="text-align: left;">40%</td>
+<td style="text-align: left;">Houve a não entrega das várias telas do app, o que gerou débito técnico e atraso no cronograma.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Tempo de Resolução</td>
+<td style="text-align: left;">9 dias</td>
+<td style="text-align: left;">7 dias da sprint 2, houve necessidade de tomar 3 dias da sprint 2.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Precisão das Estimativas</td>
+<td style="text-align: left;">65-70%</td>
+<td style="text-align: left;">Os testes realizados deram como resultado 65-70% de precisão, no critério dos testes de software.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Taxa de retrabalho</td>
+<td style="text-align: left;">50%</td>
+<td style="text-align: left;">Foi necessário refazer quase tudo dessa sprint devido ao atraso da entrega de membros.</td>
+</tr>
+</tbody>
+</table>
+<p>Fonte: Os autores</p>
+<p>Quadro 15: Métrica da Sprint 3</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Métrica</th>
+<th style="text-align: left;">Tempo/valor</th>
+<th style="text-align: left;">Observações</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Tempo da Sprint</td>
+<td style="text-align: left;">7 dias</td>
+<td style="text-align: left;">Nada significativo nesse tema.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Desvio do cronograma</td>
+<td style="text-align: left;">50%</td>
+<td style="text-align: left;">Devido ao tempo perdido na sprint anterior foi necessário acelerar o tempo real da sprint, e remanejar o tempo de debug da sprint 3.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Tempo de Resolução</td>
+<td style="text-align: left;">4 dias</td>
+<td style="text-align: left;">Tudo relacionado a sprint 3 foi feito em 4 dias.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Precisão das Estimativas</td>
+<td style="text-align: left;">65-69%</td>
+<td style="text-align: left;">Os testes realizados deram como resultado 65-70% de precisão, no critério dos testes de software.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Taxa de retrabalho</td>
+<td style="text-align: left;">15%</td>
+<td style="text-align: left;">Quase não houve bugs nessa sprint.</td>
+</tr>
+</tbody>
+</table>
+<p>Fonte: Os autores</p>
+<p>Quadro 16: Métrica da Sprint 4</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Métrica</th>
+<th style="text-align: left;">Tempo/valor</th>
+<th style="text-align: left;">Observações</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Tempo da Sprint</td>
+<td style="text-align: left;">7 dias</td>
+<td style="text-align: left;">Nada significativo nesse tema.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Desvio do cronograma</td>
+<td style="text-align: left;">15%</td>
+<td style="text-align: left;">Houveram problemas nas telas de questões e sistema de retry.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Tempo de Resolução</td>
+<td style="text-align: left;">7 dias</td>
+<td style="text-align: left;">6 dias de trabalho e 1 de debug.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Precisão das Estimativas</td>
+<td style="text-align: left;">65-69%</td>
+<td style="text-align: left;">Os testes realizados deram como resultado 65-70% de precisão, no critério dos testes de software.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Taxa de retrabalho</td>
+<td style="text-align: left;">20%</td>
+<td style="text-align: left;">Foi necessário remanejar a lógica de algumas telas.</td>
+</tr>
+</tbody>
+</table>
+<p>Fonte: Os autores</p>
+<p>Quadro 17: Métrica da Sprints 5</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Métrica</th>
+<th style="text-align: left;">Tempo/valor</th>
+<th style="text-align: left;">Observações</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Tempo da Sprint</td>
+<td style="text-align: left;">7 dias</td>
+<td style="text-align: left;">Nada significativo nesse tema.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Desvio do cronograma</td>
+<td style="text-align: left;">35%</td>
+<td style="text-align: left;">Documentação em atraso, foi necessário passar dos dias da sprint, demais objetivos foram cumpridos.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Tempo de Resolução</td>
+<td style="text-align: left;">8 dias</td>
+<td style="text-align: left;">7 dias da sprint normal, e 1 extra para resolução de atrasos</td>
+</tr>
+<tr>
+<td style="text-align: left;">Precisão das Estimativas</td>
+<td style="text-align: left;">65-69%</td>
+<td style="text-align: left;">Os testes realizados deram como resultado 65-70% de precisão, no critério dos testes de software.</td>
+</tr>
+<tr>
+<td style="text-align: left;">Taxa de retrabalho</td>
+<td style="text-align: left;">30%</td>
+<td style="text-align: left;">Necessário ir além do tempo dos objetivos do sprint, e resolver a documentação</td>
+</tr>
+</tbody>
+</table>
+<p>Fonte: Os autores</p>
+<hr />
+<h2 id="6testes-de-software">6.TESTES DE SOFTWARE<a class="headerlink" href="#6testes-de-software" title="Permanent link">&para;</a></h2>
+<h3 id="61-estrategia-de-testes-contendo">6.1 Estratégia de testes contendo:<a class="headerlink" href="#61-estrategia-de-testes-contendo" title="Permanent link">&para;</a></h3>
+<h4 id="611-niveis-de-testes-abordados">6.1.1  Níveis de Testes Abordados<a class="headerlink" href="#611-niveis-de-testes-abordados" title="Permanent link">&para;</a></h4>
+<p>A definição de uma estratégia de testes eficaz é essencial para assegurar a qualidade e a confiabilidade do sistema desenvolvido. Essa estratégia deve contemplar diferentes níveis de testes, cada um com objetivos específicos e prioridades distintas, a fim de garantir que tanto os componentes individuais quanto o sistema como um todo funcione conforme esperado. O quadro 18 apresenta os níveis de testes abordados no projeto, descrevendo suas características, prioridades e objetivos, desde testes unitários até os testes de aceitação, de modo a cobrir todas as etapas críticas da validação do software.</p>
+<p>Quadro 18 - Níveis de testes</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Nível de Teste</th>
+<th style="text-align: left;">Descrição</th>
+<th style="text-align: left;">Prioridade</th>
+<th style="text-align: left;">Objetivo</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">Testes Unitários</td>
+<td style="text-align: left;">Testes isolados de componentes individuais</td>
+<td style="text-align: left;">Alta</td>
+<td style="text-align: left;">Validar o funcionamento correto das funções e métodos específicos que implementam a lógica educacional</td>
+</tr>
+<tr>
+<td style="text-align: left;">Testes de Integração</td>
+<td style="text-align: left;">Verificação da comunicação entre módulos</td>
+<td style="text-align: left;">Média</td>
+<td style="text-align: left;">Garantir que os diferentes componentes da aplicação funcione corretamente quando integrados</td>
+</tr>
+<tr>
+<td style="text-align: left;">Testes de Sistema</td>
+<td style="text-align: left;">Avaliação do sistema como um todo</td>
+<td style="text-align: left;">Baixa</td>
+<td style="text-align: left;">Verificar o funcionamento completo da aplicação em um ambiente próximo ao de produção</td>
+</tr>
+<tr>
+<td style="text-align: left;">Testes de Aceitação</td>
+<td style="text-align: left;">Validação dos requisitos de negócio</td>
+<td style="text-align: left;">Média</td>
+<td style="text-align: left;">Confirmar que a aplicação atende às expectativas</td>
+</tr>
+</tbody>
+</table>
+<p>Fonte: Os autores</p>
+<h4 id="612-tipos-de-testes-abordados">6.1.2 Tipos de Testes Abordados<a class="headerlink" href="#612-tipos-de-testes-abordados" title="Permanent link">&para;</a></h4>
+<p>Além da definição dos níveis de testes, é fundamental identificar os diferentes tipos de testes aplicados ao longo do desenvolvimento, cada um voltado à validação de aspectos específicos do sistema. Esses testes abrangem desde a verificação funcional até avaliações mais amplas, como desempenho, segurança, acessibilidade e usabilidade. O quadro 19 apresenta os principais tipos de testes realizados, incluindo suas descrições, as técnicas aplicadas e as ferramentas utilizadas, garantindo uma abordagem abrangente para assegurar a qualidade e a confiabilidade do sistema em múltiplas dimensões.</p>
+<p>Quadro 19 - Tipos de testes</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Tipo de Teste</th>
+<th style="text-align: left;">Descrição</th>
+<th style="text-align: left;">Técnicas Aplicadas</th>
+<th style="text-align: left;">Ferramentas</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Testes Funcionais</strong></td>
+<td style="text-align: left;">Verificação das funcionalidades específicas</td>
+<td style="text-align: left;">Particionamento de equivalência, análise de valor limite</td>
+<td style="text-align: left;">Jest</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Testes de Usabilidade</strong></td>
+<td style="text-align: left;">Avaliação da experiência do usuário</td>
+<td style="text-align: left;">Testes com usuários representativos, heurísticas de Nielsen</td>
+<td style="text-align: left;">Ferramentas de gravação de sessão</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Testes de Desempenho</strong></td>
+<td style="text-align: left;">Análise do tempo de resposta e uso de recursos</td>
+<td style="text-align: left;">Testes de carga, testes de estresse</td>
+<td style="text-align: left;">JMeter, Gatling</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Testes de Segurança</strong></td>
+<td style="text-align: left;">Verificação de vulnerabilidades</td>
+<td style="text-align: left;">OWASP Top 10, análise estática de código</td>
+<td style="text-align: left;">SonarQube, OWASP ZAP</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Testes de Acessibilidade</strong></td>
+<td style="text-align: left;">Validação da acessibilidade para diferentes perfis</td>
+<td style="text-align: left;">WCAG 2.1, testes com tecnologias assistivas</td>
+<td style="text-align: left;">Lighthouse, Axe</td>
+</tr>
+</tbody>
+</table>
+<p>Fonte: Os autores.</p>
+<h4 id="613-ambientes-de-testes">6.1.3 Ambientes de Testes<a class="headerlink" href="#613-ambientes-de-testes" title="Permanent link">&para;</a></h4>
+<p>A realização de testes em diferentes ambientes garante maior confiabilidade no processo de validação do sistema. Cada ambiente possui um propósito específico, com configurações adequadas para o tipo de teste executado e responsabilidades bem definidas entre os membros da equipe. O quadro 20 descreve os principais ambientes de testes utilizados, destacando suas características e responsáveis por sua execução.</p>
+<p>Quadro 20- Ambiente de testes</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Ambiente</th>
+<th style="text-align: left;">Propósito</th>
+<th style="text-align: left;">Configuração</th>
+<th style="text-align: left;">Responsável</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Desenvolvimento</strong></td>
+<td style="text-align: left;">Execução de testes unitários durante o desenvolvimento</td>
+<td style="text-align: left;">Ambiente local com frameworks de teste</td>
+<td style="text-align: left;">Desenvolvedores</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Integração Contínua</strong></td>
+<td style="text-align: left;">Execução automática de testes após cada commit</td>
+<td style="text-align: left;">Pipeline CI/CD com Jenkins/GitHub Actions + SonarQube</td>
+<td style="text-align: left;">DevOps e QA</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Pré-produção</strong></td>
+<td style="text-align: left;">Testes integrados em ambiente similar ao de produção</td>
+<td style="text-align: left;">Configuração espelhando o ambiente de produção</td>
+<td style="text-align: left;">Equipe de QA</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Dispositivos Físicos</strong></td>
+<td style="text-align: left;">Testes em diferentes hardwares e sistemas operacionais</td>
+<td style="text-align: left;">Conjunto de smartphones com diferentes especificações e versões de SO</td>
+<td style="text-align: left;">Equipe de QA</td>
+</tr>
+</tbody>
+</table>
+<p>Fonte: Os autores</p>
+<h4 id="614-metricas-de-analise-do-sonarqube">6.1.4 Métricas de Análise do SonarQube<a class="headerlink" href="#614-metricas-de-analise-do-sonarqube" title="Permanent link">&para;</a></h4>
+<p>Para garantir a qualidade contínua do código-fonte, foram utilizadas as métricas fornecidas pela ferramenta SonarQube. Essas métricas permitem identificar falhas, problemas de segurança e pontos de melhoria na manutenibilidade do sistema. O quadro 21 apresenta as principais métricas de análise adotadas, suas descrições, metas estabelecidas e o impacto esperado no projeto.</p>
+<p>Quadro 21 - Métricas de Análise do SonarQube</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Métrica</th>
+<th style="text-align: left;">Descrição</th>
+<th style="text-align: left;">Meta</th>
+<th style="text-align: left;">Impacto</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Cobertura de Código</strong></td>
+<td style="text-align: left;">Percentual de código coberto por testes unitários</td>
+<td style="text-align: left;">$\ge$ 70%</td>
+<td style="text-align: left;">Garantir que a maioria do código foi testada</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Bugs</strong></td>
+<td style="text-align: left;">Problemas que representam falhas no código</td>
+<td style="text-align: left;">0 (críticos e altos)</td>
+<td style="text-align: left;">Evitar erros durante a execução</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Vulnerabilidades</strong></td>
+<td style="text-align: left;">Potenciais brechas de segurança</td>
+<td style="text-align: left;">0 (críticas e altas)</td>
+<td style="text-align: left;">Proteger dados dos usuários</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Code Smells</strong></td>
+<td style="text-align: left;">Problemas de manutenibilidade</td>
+<td style="text-align: left;">&lt; 20 por 1000 linhas</td>
+<td style="text-align: left;">Facilitar manutenção futura</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Duplicação de Código</strong></td>
+<td style="text-align: left;">Código repetido</td>
+<td style="text-align: left;">&lt; 5%</td>
+<td style="text-align: left;">Melhorar manutenibilidade</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Complexidade Ciclomática</strong></td>
+<td style="text-align: left;">Complexidade de caminhos de execução</td>
+<td style="text-align: left;">&lt; 10 por método</td>
+<td style="text-align: left;">Facilitar manutenção e testes</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Débito Técnico</strong></td>
+<td style="text-align: left;">Tempo estimado para resolver issues</td>
+<td style="text-align: left;">&lt; 5% do tempo de desenvolvimento</td>
+<td style="text-align: left;">Manter qualidade ao longo do tempo</td>
+</tr>
+</tbody>
+</table>
+<p>Fonte: Os autores.</p>
+<h4 id="615-plano-de-testes-unitarios">6.1.5 Plano de Testes Unitários<a class="headerlink" href="#615-plano-de-testes-unitarios" title="Permanent link">&para;</a></h4>
+<p>Para garantir o funcionamento correto dos componentes do sistema de forma isolada, foi elaborado um plano de testes unitários. Cada componente foi mapeado com seus respectivos casos de teste, recursos necessários para simulação (mocks) e critérios de aceitação, assegurando que cada parte do sistema atenda aos requisitos esperados antes da integração com outros módulos. O quadro 22 apresenta os testes unitários planejados por componente, visando validar desde funcionalidades básicas até aspectos de usabilidade e acessibilidade.</p>
+<p>Quadro 22 - Plano de Testes Unitários</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Componente</th>
+<th style="text-align: left;">Casos de Teste</th>
+<th style="text-align: left;">Mocks Necessários</th>
+<th style="text-align: left;">Critérios de Aceitação</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>Módulo de português</strong></td>
+<td style="text-align: left;">Telas de pontuação, sintaxe gramatical e interpretação de texto</td>
+<td style="text-align: left;">API de imagens, serviço de feedback</td>
+<td style="text-align: left;">100% de assertividade no reconhecimento das temáticas</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Módulo de Matemática Básica</strong></td>
+<td style="text-align: left;">Operações básicas (multiplicação, divisão/fração) e expressões numéricas</td>
+<td style="text-align: left;">Gerador de problemas, calculadora</td>
+<td style="text-align: left;">Cálculos corretos e verificação de resultados</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Sistema de Progressão</strong></td>
+<td style="text-align: left;">Avanço entre níveis, desbloqueio de conteúdo, relatórios de progresso</td>
+<td style="text-align: left;">Perfil de usuário, histórico de atividades</td>
+<td style="text-align: left;">Correto controle de acesso aos níveis baseado no desempenho</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>Interface do Usuário</strong></td>
+<td style="text-align: left;">Renderização de elementos, resposta a interações, feedback visual.</td>
+<td style="text-align: left;">Simulador de eventos de UI, renderizador</td>
+<td style="text-align: left;">Conformidade com diretrizes de design e acessibilidade</td>
+</tr>
+</tbody>
+</table>
+<p>Fonte: Os autores.</p>
+<h3 id="62-roteiro-de-teste">6.2 Roteiro de Teste<a class="headerlink" href="#62-roteiro-de-teste" title="Permanent link">&para;</a></h3>
+<p>O roteiro de teste detalha a execução prática dos testes planejados, registrando informações como objetivos, pré-condições, critérios de aceitação, resultados obtidos e eventuais reparos realizados. Essa estrutura garante o rastreamento e a repetibilidade dos testes, além de facilitar a análise da estabilidade e qualidade das funcionalidades testadas. O quadro 23 apresenta o roteiro de teste aplicado ao sistema, com dados organizados por ID de teste, nível, tipo e ciclos de execução, contribuindo para um processo de validação completo e documentado.</p>
+<p>Quadro 23 - Roteiro de teste</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">ID do Teste</th>
+<th style="text-align: left;">Nome do Teste</th>
+<th style="text-align: left;">Objetivo do Teste</th>
+<th style="text-align: left;">Nível</th>
+<th style="text-align: left;">Tipo</th>
+<th style="text-align: left;">Pré-condições</th>
+<th style="text-align: left;">Critério de Aceitação</th>
+<th style="text-align: left;">Resultado / Evidência</th>
+<th style="text-align: left;">Reparos Executados</th>
+<th style="text-align: left;">Ciclos Executados</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;"><strong>T01</strong></td>
+<td style="text-align: left;">CreateUserService.spec.ts</td>
+<td style="text-align: left;">Verificar se é possível criar um novo usuário com dados válidos</td>
+<td style="text-align: left;">Unitário</td>
+<td style="text-align: left;">Funcional</td>
+<td style="text-align: left;">Banco de dados disponível, aplicação rodando</td>
+<td style="text-align: left;">Usuário cadastrado com sucesso e resposta HTTP 201</td>
+<td style="text-align: left;">Teste executado com sucesso dia 08/06/2025</td>
+<td style="text-align: left;">Correção de erro de autenticação no banco (senha do postgres)</td>
+<td style="text-align: left;">2</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>T02</strong></td>
+<td style="text-align: left;">DeleteUserController.spec.ts</td>
+<td style="text-align: left;">Verificar se é possível excluir um usuário existente</td>
+<td style="text-align: left;">Integração</td>
+<td style="text-align: left;">API/Backend</td>
+<td style="text-align: left;">Usuário previamente cadastrado no banco</td>
+<td style="text-align: left;">Usuário excluído com sucesso e resposta HTTP 200 ou 204</td>
+<td style="text-align: left;">Teste executado com sucesso dia 08/06/2025</td>
+<td style="text-align: left;">Ajuste na configuração do Docker e na criação do banco de dados (nome do banco estava como 'user', gerando conflito)</td>
+<td style="text-align: left;">3</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>T03</strong></td>
+<td style="text-align: left;">UpdateUserController.spec.ts</td>
+<td style="text-align: left;">Verificar se é possível atualizar os dados de um usuário</td>
+<td style="text-align: left;">Integração</td>
+<td style="text-align: left;">API/Backend</td>
+<td style="text-align: left;">Usuário previamente cadastrado no banco</td>
+<td style="text-align: left;">Dados atualizados corretamente e resposta HTTP 200</td>
+<td style="text-align: left;">Teste executado com sucesso dia 08/06/2025</td>
+<td style="text-align: left;">Não houve</td>
+<td style="text-align: left;">2</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>T04</strong></td>
+<td style="text-align: left;">PreLogin.spec.tsx</td>
+<td style="text-align: left;">Verificar se a tela PreLogin renderiza corretamente e navega para a tela de Login</td>
+<td style="text-align: left;">Unitário</td>
+<td style="text-align: left;">Interface com Interação</td>
+<td style="text-align: left;">App rodando, dependências instaladas</td>
+<td style="text-align: left;">Tela renderiza textos principais e botão 'Entrar' funciona corretamente</td>
+<td style="text-align: left;">Teste executado com sucesso dia 15/06/2025</td>
+<td style="text-align: left;">Ajuste nos mocks de navegação para evitar erro 'navigation not initialized'</td>
+<td style="text-align: left;">2</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>T05</strong></td>
+<td style="text-align: left;">Fluxo.spec.tsx</td>
+<td style="text-align: left;">Verificar o fluxo completo: PreLogin → Login → Regras → Home → Questões de Português</td>
+<td style="text-align: left;">Integração</td>
+<td style="text-align: left;">Fluxo Completo</td>
+<td style="text-align: left;">App rodando, API mockada, banco configurado</td>
+<td style="text-align: left;">Navega corretamente por todas as telas do fluxo, validando presença dos componentes esperados</td>
+<td style="text-align: left;">Teste executado com sucesso dia 15/06/2025 e adicionado novas páginas no fluxo dia 22/06/2025</td>
+<td style="text-align: left;">Ajuste no mock da API, correção do erro 'navigation not initialized' e aumento de timeout para 30000ms</td>
+<td style="text-align: left;">2</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>T06</strong></td>
+<td style="text-align: left;">QuestaoMT01.spec.tsx</td>
+<td style="text-align: left;">Verificar renderização, respostas e navegação da tela QuestaoMT01</td>
+<td style="text-align: left;">Unitário</td>
+<td style="text-align: left;">Interface com Interação</td>
+<td style="text-align: left;">App rodando</td>
+<td style="text-align: left;">Renderiza, responde e navega corretamente</td>
+<td style="text-align: left;">Teste executado com sucesso dia 15/06/2025</td>
+<td style="text-align: left;">Não houve</td>
+<td style="text-align: left;">1</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>T07</strong></td>
+<td style="text-align: left;">QuestaoPT01.spec.tsx</td>
+<td style="text-align: left;">Verificar renderização, respostas e navegação da tela QuestaoPT01</td>
+<td style="text-align: left;">Unitário</td>
+<td style="text-align: left;">Interface com Interação</td>
+<td style="text-align: left;">App rodando</td>
+<td style="text-align: left;">Renderiza, responde e navega corretamente</td>
+<td style="text-align: left;">Teste executado com sucesso dia 15/06/2025</td>
+<td style="text-align: left;">Não houve</td>
+<td style="text-align: left;">1</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>T08</strong></td>
+<td style="text-align: left;">QuestaoMT02.spec.tsx</td>
+<td style="text-align: left;">Verificar renderização, respostas e navegação da tela QuestaoMT02</td>
+<td style="text-align: left;">Unitário</td>
+<td style="text-align: left;">Interface com Interação</td>
+<td style="text-align: left;">App rodando</td>
+<td style="text-align: left;">Renderiza, responde e navega corretamente</td>
+<td style="text-align: left;">Teste executado com sucesso dia 22/06/2025</td>
+<td style="text-align: left;">Não houve</td>
+<td style="text-align: left;">1</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>T09</strong></td>
+<td style="text-align: left;">QuestaoMT03.spec.tsx</td>
+<td style="text-align: left;">Verificar renderização, respostas e navegação da tela QuestaoMT03</td>
+<td style="text-align: left;">Unitário</td>
+<td style="text-align: left;">Interface com Interação</td>
+<td style="text-align: left;">App rodando</td>
+<td style="text-align: left;">Renderiza, responde e navega corretamente</td>
+<td style="text-align: left;">Teste executado com sucesso dia 22/06/2025</td>
+<td style="text-align: left;">Não houve</td>
+<td style="text-align: left;">1</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>T10</strong></td>
+<td style="text-align: left;">QuestaoMT04.spec.tsx</td>
+<td style="text-align: left;">Verificar renderização, respostas e navegação da tela QuestaoMT04</td>
+<td style="text-align: left;">Unitário</td>
+<td style="text-align: left;">Interface com Interação</td>
+<td style="text-align: left;">App rodando</td>
+<td style="text-align: left;">Renderiza, responde e navega corretamente</td>
+<td style="text-align: left;">Teste executado com sucesso dia 22/06/2025</td>
+<td style="text-align: left;">Não houve</td>
+<td style="text-align: left;">1</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>T11</strong></td>
+<td style="text-align: left;">QuestaoMT05.spec.tsx</td>
+<td style="text-align: left;">Verificar renderização, respostas e navegação da tela QuestaoMT05</td>
+<td style="text-align: left;">Unitário</td>
+<td style="text-align: left;">Interface com Interação</td>
+<td style="text-align: left;">App rodando</td>
+<td style="text-align: left;">Renderiza, responde e navega corretamente</td>
+<td style="text-align: left;">Teste executado com sucesso dia 22/06/2025</td>
+<td style="text-align: left;">Não houve</td>
+<td style="text-align: left;">1</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>T12</strong></td>
+<td style="text-align: left;">QuestaoMT06.spec.tsx</td>
+<td style="text-align: left;">Verificar renderização, respostas e navegação da tela QuestaoMT06</td>
+<td style="text-align: left;">Unitário</td>
+<td style="text-align: left;">Interface com Interação</td>
+<td style="text-align: left;">App rodando</td>
+<td style="text-align: left;">Renderiza, responde e navega corretamente</td>
+<td style="text-align: left;">Teste executado com sucesso dia 22/06/2025</td>
+<td style="text-align: left;">Não houve</td>
+<td style="text-align: left;">1</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>T13</strong></td>
+<td style="text-align: left;">QuestaoMT07.spec.tsx</td>
+<td style="text-align: left;">Verificar renderização, respostas e navegação da tela QuestaoMT07</td>
+<td style="text-align: left;">Unitário</td>
+<td style="text-align: left;">Interface com Interação</td>
+<td style="text-align: left;">App rodando</td>
+<td style="text-align: left;">Renderiza, responde e navega corretamente</td>
+<td style="text-align: left;">Teste executado com sucesso dia 22/06/2025</td>
+<td style="text-align: left;">Não houve</td>
+<td style="text-align: left;">1</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>T14</strong></td>
+<td style="text-align: left;">QuestaoMT08.spec.tsx</td>
+<td style="text-align: left;">Verificar renderização, respostas e navegação da tela QuestaoMT08</td>
+<td style="text-align: left;">Unitário</td>
+<td style="text-align: left;">Interface com Interação</td>
+<td style="text-align: left;">App rodando</td>
+<td style="text-align: left;">Renderiza, responde e navega corretamente</td>
+<td style="text-align: left;">Teste executado com sucesso dia 22/06/2025</td>
+<td style="text-align: left;">Não houve</td>
+<td style="text-align: left;">1</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>T15</strong></td>
+<td style="text-align: left;">QuestaoMT09.spec.tsx</td>
+<td style="text-align: left;">Verificar renderização, respostas e navegação da tela QuestaoMT09</td>
+<td style="text-align: left;">Unitário</td>
+<td style="text-align: left;">Interface com Interação</td>
+<td style="text-align: left;">App rodando</td>
+<td style="text-align: left;">Renderiza, responde e navega corretamente</td>
+<td style="text-align: left;">Teste executado com sucesso dia 22/06/2025</td>
+<td style="text-align: left;">Não houve</td>
+<td style="text-align: left;">1</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>T16</strong></td>
+<td style="text-align: left;">QuestaoPT02.spec.tsx</td>
+<td style="text-align: left;">Verificar renderização, respostas e navegação da tela QuestaoPT02</td>
+<td style="text-align: left;">Unitário</td>
+<td style="text-align: left;">Interface com Interação</td>
+<td style="text-align: left;">App rodando</td>
+<td style="text-align: left;">Renderiza, responde e navega corretamente</td>
+<td style="text-align: left;">Teste executado com sucesso dia 22/06/2025</td>
+<td style="text-align: left;">Não houve</td>
+<td style="text-align: left;">0</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>T17</strong></td>
+<td style="text-align: left;">QuestaoPT03.spec.tsx</td>
+<td style="text-align: left;">Verificar renderização, respostas e navegação da tela QuestaoPT03</td>
+<td style="text-align: left;">Unitário</td>
+<td style="text-align: left;">Interface com Interação</td>
+<td style="text-align: left;">App rodando</td>
+<td style="text-align: left;">Renderiza, responde e navega corretamente</td>
+<td style="text-align: left;">Teste executado com sucesso dia 22/06/2025</td>
+<td style="text-align: left;">Não houve</td>
+<td style="text-align: left;">1</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>T18</strong></td>
+<td style="text-align: left;">QuestaoPT04.spec.tsx</td>
+<td style="text-align: left;">Verificar renderização, respostas e navegação da tela QuestaoPT04</td>
+<td style="text-align: left;">Unitário</td>
+<td style="text-align: left;">Interface com Interação</td>
+<td style="text-align: left;">App rodando</td>
+<td style="text-align: left;">Renderiza, responde e navega corretamente</td>
+<td style="text-align: left;">Teste executado com sucesso dia 22/06/2025</td>
+<td style="text-align: left;">Não houve</td>
+<td style="text-align: left;">1</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>T19</strong></td>
+<td style="text-align: left;">QuestaoPT05.spec.tsx</td>
+<td style="text-align: left;">Verificar renderização, respostas e navegação da tela QuestaoPT05</td>
+<td style="text-align: left;">Unitário</td>
+<td style="text-align: left;">Interface com Interação</td>
+<td style="text-align: left;">App rodando</td>
+<td style="text-align: left;">Renderiza, responde e navega corretamente</td>
+<td style="text-align: left;">Teste executado com sucesso dia 22/06/2025</td>
+<td style="text-align: left;">Não houve</td>
+<td style="text-align: left;">1</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>T20</strong></td>
+<td style="text-align: left;">QuestaoPT06.spec.tsx</td>
+<td style="text-align: left;">Verificar renderização, respostas e navegação da tela QuestaoPT06</td>
+<td style="text-align: left;">Unitário</td>
+<td style="text-align: left;">Interface com Interação</td>
+<td style="text-align: left;">App rodando</td>
+<td style="text-align: left;">Renderiza, responde e navega corretamente</td>
+<td style="text-align: left;">Teste executado com sucesso dia 22/06/2025</td>
+<td style="text-align: left;">Não houve</td>
+<td style="text-align: left;">1</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>T21</strong></td>
+<td style="text-align: left;">QuestaoPT07.spec.tsx</td>
+<td style="text-align: left;">Verificar renderização, respostas e navegação da tela QuestaoPT07</td>
+<td style="text-align: left;">Unitário</td>
+<td style="text-align: left;">Interface com Interação</td>
+<td style="text-align: left;">App rodando</td>
+<td style="text-align: left;">Renderiza, responde e navega corretamente</td>
+<td style="text-align: left;">Teste executado com sucesso dia 22/06/2025</td>
+<td style="text-align: left;">Não houve</td>
+<td style="text-align: left;">1</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>T22</strong></td>
+<td style="text-align: left;">QuestaoPT08.spec.tsx</td>
+<td style="text-align: left;">Verificar renderização, respostas e navegação da tela QuestaoPT08</td>
+<td style="text-align: left;">Unitário</td>
+<td style="text-align: left;">Interface com Interação</td>
+<td style="text-align: left;">App rodando</td>
+<td style="text-align: left;">Renderiza, responde e navega corretamente</td>
+<td style="text-align: left;">Teste executado com sucesso dia 22/06/2025</td>
+<td style="text-align: left;">Não houve</td>
+<td style="text-align: left;">1</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>T23</strong></td>
+<td style="text-align: left;">QuestaoPT09.spec.tsx</td>
+<td style="text-align: left;">Verificar renderização, respostas e navegação da tela QuestaoPT09</td>
+<td style="text-align: left;">Unitário</td>
+<td style="text-align: left;">Interface com Interação</td>
+<td style="text-align: left;">App rodando</td>
+<td style="text-align: left;">Renderiza, responde e navega corretamente</td>
+<td style="text-align: left;">Teste executado com sucesso dia 22/06/2025</td>
+<td style="text-align: left;">Não houve</td>
+<td style="text-align: left;">1</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>T24</strong></td>
+<td style="text-align: left;">HomeButton.spec.tsx</td>
+<td style="text-align: left;">Validar renderização e navegação do botão Home</td>
+<td style="text-align: left;">Unitário</td>
+<td style="text-align: left;">Componente com Interação</td>
+<td style="text-align: left;">App rodando</td>
+<td style="text-align: left;">Renderiza botão e navega corretamente</td>
+<td style="text-align: left;">Teste executado com sucesso dia 22/06/2025</td>
+<td style="text-align: left;">Não houve</td>
+<td style="text-align: left;">1</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>T25</strong></td>
+<td style="text-align: left;">StartButton.spec.tsx</td>
+<td style="text-align: left;">Validar renderização e clique do botão Start</td>
+<td style="text-align: left;">Unitário</td>
+<td style="text-align: left;">Componente com Interação</td>
+<td style="text-align: left;">App rodando</td>
+<td style="text-align: left;">Renderiza botão e executa função corretamente</td>
+<td style="text-align: left;">Teste executado com sucesso dia 22/06/2025</td>
+<td style="text-align: left;">Não houve</td>
+<td style="text-align: left;">1</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>T26</strong></td>
+<td style="text-align: left;">Button.spec.tsx</td>
+<td style="text-align: left;">Validar renderização e clique do botão genérico</td>
+<td style="text-align: left;">Unitário</td>
+<td style="text-align: left;">Componente com Interação</td>
+<td style="text-align: left;">App rodando</td>
+<td style="text-align: left;">Renderiza botão e executa função corretamente</td>
+<td style="text-align: left;">Teste executado com sucesso dia 22/06/2025</td>
+<td style="text-align: left;">Não houve</td>
+<td style="text-align: left;">1</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>T27</strong></td>
+<td style="text-align: left;">Loading.spec.tsx</td>
+<td style="text-align: left;">Validar renderização do componente de carregamento</td>
+<td style="text-align: left;">Unitário</td>
+<td style="text-align: left;">Visual</td>
+<td style="text-align: left;">App rodando</td>
+<td style="text-align: left;">Renderiza corretamente o indicador de carregamento</td>
+<td style="text-align: left;">Teste executado com sucesso dia 22/06/2025</td>
+<td style="text-align: left;">Não houve</td>
+<td style="text-align: left;">1</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>T28</strong></td>
+<td style="text-align: left;">ProgressBar.spec.tsx</td>
+<td style="text-align: left;">Validar renderização e atualização da barra de progresso</td>
+<td style="text-align: left;">Unitário</td>
+<td style="text-align: left;">Visual</td>
+<td style="text-align: left;">App rodando</td>
+<td style="text-align: left;">Renderiza progresso atual e atualiza corretamente</td>
+<td style="text-align: left;">Teste executado com sucesso dia 22/06/2025</td>
+<td style="text-align: left;">Não houve</td>
+<td style="text-align: left;">1</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>T29</strong></td>
+<td style="text-align: left;">Retry.spec.tsx</td>
+<td style="text-align: left;">Validar renderização e interações do componente Retry</td>
+<td style="text-align: left;">Unitário</td>
+<td style="text-align: left;">Componente com Interação</td>
+<td style="text-align: left;">App rodando</td>
+<td style="text-align: left;">Renderiza mensagens e botões corretamente e executa funções</td>
+<td style="text-align: left;">Teste executado com sucesso dia 22/06/2025</td>
+<td style="text-align: left;">Não houve</td>
+<td style="text-align: left;">1</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>T30</strong></td>
+<td style="text-align: left;">BackButton.spec.tsx</td>
+<td style="text-align: left;">Validar renderização e funcionalidade do botão Voltar (goBack)</td>
+<td style="text-align: left;">Unitário</td>
+<td style="text-align: left;">Componente com Interação</td>
+<td style="text-align: left;">App rodando, dependências instaladas</td>
+<td style="text-align: left;">Renderiza, responde, voltar e executa navigation.goBack() corretamente</td>
+<td style="text-align: left;">Teste executado com sucesso dia 22/06/2025</td>
+<td style="text-align: left;">Não houve</td>
+<td style="text-align: left;">1</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>T31</strong></td>
+<td style="text-align: left;">Parabens.spec.tsx</td>
+<td style="text-align: left;">Validar a renderização e mensagem ao concluir atividades</td>
+<td style="text-align: left;">Unitário</td>
+<td style="text-align: left;">Visual</td>
+<td style="text-align: left;">App rodando, atividade finalizada</td>
+<td style="text-align: left;">Tela exibe mensagem de parabéns ao final da tarefa</td>
+<td style="text-align: left;">Teste executado com sucesso dia 26/06/2025</td>
+<td style="text-align: left;">Não houve</td>
+<td style="text-align: left;">1</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>T31</strong></td>
+<td style="text-align: left;">EsqueceuSenha.spec.tsx</td>
+<td style="text-align: left;">Validar renderização dos campos e botão na tela de redefinição de senha</td>
+<td style="text-align: left;">Unitário</td>
+<td style="text-align: left;">Interface (Renderização)</td>
+<td style="text-align: left;">App rodando, dependências instaladas</td>
+<td style="text-align: left;">Tela exibe título, campos de e-mail e nova senha e botão 'Recuperar'</td>
+<td style="text-align: left;">Teste executado com sucesso dia 26/06/2025</td>
+<td style="text-align: left;">Não houve</td>
+<td style="text-align: left;">1</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>T32</strong></td>
+<td style="text-align: left;">EsqueceuSenhaFluxo.spec.ts</td>
+<td style="text-align: left;">Validar fluxo completo de redefinição de senha (navegar, preencher e confirmar) de forma automatizada</td>
+<td style="text-align: left;">Integração</td>
+<td style="text-align: left;">Fluxo de Troca de Senha</td>
+<td style="text-align: left;">App rodando, conta de teste existente</td>
+<td style="text-align: left;">Fluxo executado com sucesso: recuperação de senha concluída e mensagem de confirmação exibida</td>
+<td style="text-align: left;">Teste executado com sucesso dia 29/06/2025</td>
+<td style="text-align: left;">Não houve</td>
+<td style="text-align: left;">1</td>
+</tr>
+<tr>
+<td style="text-align: left;"><strong>T33</strong></td>
+<td style="text-align: left;">Teste Manual APK (Vídeo)</td>
+<td style="text-align: left;">Validar usabilidade do fluxo de redefinição de senha no APK instalado, incluindo gravação de uso real</td>
+<td style="text-align: left;">Usabilidade</td>
+<td style="text-align: left;">Fluxo Completo (Uso Real)</td>
+<td style="text-align: left;">APK instalado no dispositivo, conta de teste criada</td>
+<td style="text-align: left;">Usuário consegue redefinir a senha e navegar sem dificuldades, conforme esperado</td>
+<td style="text-align: left;">Teste executado com sucesso dia 30/06/2025 (vídeo anexado - <a href="https://www.google.com/search?q=https://youtu.be/ChI2nIlxacg">https://youtu.be/ChI2nIlxacg</a>)</td>
+<td style="text-align: left;">Não houve</td>
+<td style="text-align: left;">1</td>
+</tr>
+</tbody>
+</table>
+<h2 id="fonte-os-autores">Fonte: Os autores<a class="headerlink" href="#fonte-os-autores" title="Permanent link">&para;</a></h2>
+<h2 id="7referencias-bibliograficas">7.REFERÊNCIAS BIBLIOGRÁFICAS<a class="headerlink" href="#7referencias-bibliograficas" title="Permanent link">&para;</a></h2>
+<p>BECK, Kent. Extreme Programming Explained: Embrace Change. 2. ed. Boston: Addison-Wesley, 2004. Disponível em: https://ptgmedia.pearsoncmg.com/images/9780321278654/samplepages/9780321278654.pdf. Acesso em: 29 de jun. 2025.</p>
+<p>IBGE. Censo 2022: taxa de analfabetismo cai de 9,6% para 7,0% em 12 anos, mas desigualdades persistem. Agência de Notícias IBGE, Rio de Janeiro, 17 maio 2024. Disponível em: https://agenciadenoticias.ibge.gov.br/agencia-noticias/2012-agencia-de-noticias/noticias/40098-censo-2022-taxa-de-analfabetismo-cai-de-9-6-para-7-0-em-12-anos-mas-desigualdades-persistem. Acesso em: 15 abr. 2025</p>
+<p>MANIFESTO ÁGIL. Princípios do Manifesto Ágil. Disponível em: https://agilemanifesto.org/iso/ptbr/principles.html. Acesso em: 28 jun. 2025.</p>
+<p>OCDE. Resultados do PISA 2022: O desempenho dos estudantes em matemática, leitura e ciências. Paris: Organização para a Cooperação e Desenvolvimento Econômico, 2023. Disponível em: https://www.oecd.org/pisa/. Acesso em: 22 jun. 2025.</p>
+<p>ONU. Objetivos de Desenvolvimento Sustentável. 2015. Disponível em: https://brasil.un.org/pt-br/sdgs. Acesso em: 22 jun. 2025.</p>
+<p>SCRUM GUIDE. Metodologias de desenvolvimento Scrum. Disponível em: https://scrumguides.org/docs/scrumguide/v1/Scrum-Guide-Portuguese-BR.pdf. Acesso em: 29 jun. 2025.</p>
+<p>TOKARNIA, Mariana. Resultados do Pisa reforçam gargalo no ensino de matemática no Brasil. Agência Brasil, Rio de Janeiro, 5 dez. 2023. Disponível em: https://agenciabrasil.ebc.com.br/educacao/noticia/2023-12/resultados-do-pisa-reforcam-gargalo-no-ensino-de-matematica-no-brasil. Acesso em: 15 abr. 2025.</p>
+<p>UNESCO – UIS. Definitions of adult functional literacy and numeracy for SDG indicator 4.6.1. Montreal: UNESCO Institute for Statistics, 2019. Disponível em: http://gaml.uis.unesco.org/wp-content/uploads/sites/2/2019/05/GAML6-WD-4-Definitions-of-adult-functional-literacy-and-numeracy-for-SDG-indcator-4.6.1-1.pdf. Acesso em: 22 jun. 2025.</p>
+<hr />
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      <script id="__config" type="application/json">{"base": "..", "features": [], "search": "../assets/javascripts/workers/search.d50fe291.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.56ea9cef.min.js"></script>
+      
+    
+  </body>
+</html>
